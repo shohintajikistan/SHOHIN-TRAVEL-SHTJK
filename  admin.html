@@ -409,7 +409,7 @@ getFirestore(app);
 ========================= */
 
 const ADMIN_UID =
-"pyMI7sgUoIcyRyQpVm5wGerMPh92";
+"TwxXqD7YQCT1H8GzkIhImCE8Uxs2";
 
 
 /* =========================
@@ -500,7 +500,7 @@ adminBox.classList.remove("hidden");
 document
 .getElementById("adminEmail")
 .textContent=
-user.email;
+"Выполнен вход: "+user.email;
 
 loadItems();
 
@@ -852,7 +852,8 @@ loadItems();
 console.error(error);
 
 alert(
-"Ошибка удаления."
+"Ошибка удаления: "+
+error.message
 );
 
 }
