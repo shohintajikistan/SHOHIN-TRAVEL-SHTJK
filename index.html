@@ -104,12 +104,7 @@ color:var(--pine-600)
 /* HEADER */
 
 .header{
-background:linear-gradient(
-180deg,
-var(--pine-800) 0%,
-var(--pine-700) 62%,
-var(--pine-600) 100%
-);
+background:linear-gradient(180deg,var(--pine-800) 0%,var(--pine-700) 62%,var(--pine-600) 100%);
 color:var(--cream);
 padding:18px 18px 34px;
 position:relative;
@@ -221,7 +216,6 @@ background:transparent
 }
 
 .search-bar input::placeholder{color:#9AA79E}
-
 .search-icon{font-size:16px;opacity:.55}
 
 .search-clear{
@@ -236,7 +230,7 @@ display:none
 display:flex;
 gap:9px;
 overflow-x:auto;
-padding:2px 18px 6px;
+padding:12px 18px 6px;
 scroll-snap-type:x proximity
 }
 
@@ -458,11 +452,7 @@ line-height:1.5
 margin:2px 18px 16px;
 border-radius:var(--radius-md);
 border:1.5px dashed var(--gold-500);
-background:linear-gradient(
-135deg,
-var(--gold-300),
-var(--cream-2) 130%
-);
+background:linear-gradient(135deg,var(--gold-300),var(--cream-2) 130%);
 padding:13px 14px;
 display:flex;
 align-items:center;
@@ -537,7 +527,6 @@ position:relative
 }
 
 .nav-btn .ic{font-size:19px}
-
 .nav-btn.active{color:var(--pine-700)}
 
 .nav-badge{
@@ -979,6 +968,19 @@ color:var(--gold-600)
 
 .act-btn .ic{font-size:18px}
 
+/* FIREBASE STATUS */
+
+.firebase-status{
+margin:8px 18px 14px;
+padding:10px 12px;
+border-radius:12px;
+background:#E4F1EA;
+color:#175038;
+font-size:11px;
+font-weight:600;
+display:none
+}
+
 /* TOAST */
 
 .toast{
@@ -1013,7 +1015,6 @@ transform:translateX(-50%) translateY(0)
 <div id="app">
 
 <!-- HOME -->
-
 <div class="view active" id="view-home">
 
 <div class="header">
@@ -1022,7 +1023,6 @@ transform:translateX(-50%) translateY(0)
 
 <div class="logo">
 <div class="logo-mark">S</div>
-
 <div class="logo-text">
 SHOHIN TRAVEL
 <small>SHTJK 🇹🇯</small>
@@ -1045,8 +1045,7 @@ SHOHIN TRAVEL
 id="homeSearch"
 type="text"
 data-i18n-ph="searchPh"
-placeholder="Город, место, категория…"
->
+placeholder="Город, место, категория…">
 
 <span class="search-clear" id="homeSearchClear">✕</span>
 
@@ -1057,17 +1056,19 @@ placeholder="Город, место, категория…"
 <polygon
 points="0,64 0,40 60,18 120,36 180,10 250,32 320,14 390,38 440,22 480,40 480,64"
 fill="#1E6A48"
-opacity=".55"
-/>
+opacity=".55"/>
 
 <polygon
 points="0,64 0,50 70,30 140,46 210,26 280,44 350,28 420,48 480,32 480,64"
 fill="#175038"
-opacity=".75"
-/>
+opacity=".75"/>
 
 </svg>
 
+</div>
+
+<div class="firebase-status" id="firebaseStatus">
+🔥 Firebase подключается...
 </div>
 
 <div class="chip-row" id="catChips"></div>
@@ -1077,7 +1078,6 @@ opacity=".75"
 <div class="section">
 
 <div class="section-head">
-
 <div class="section-title" data-i18n="popularCities">
 Популярные города
 </div>
@@ -1086,13 +1086,11 @@ opacity=".75"
 class="section-link"
 data-nav="search"
 data-cat="city"
-data-i18n="seeAll"
->
+data-i18n="seeAll">
 Все →
 </button>
 
 </div>
-
 </div>
 
 <div class="rail" id="citiesRail"></div>
@@ -1110,13 +1108,11 @@ data-i18n="seeAll"
 <button
 class="section-link"
 data-nav="search"
-data-i18n="seeAll"
->
+data-i18n="seeAll">
 Все →
 </button>
 
 </div>
-
 </div>
 
 <div class="grid" id="placesGrid"></div>
@@ -1131,15 +1127,12 @@ data-i18n="seeAll"
 
 
 <!-- SEARCH -->
-
 <div class="view" id="view-search">
 
 <div class="page-head">
-
 <div class="title" data-i18n="searchTitle">
 Поиск и категории
 </div>
-
 </div>
 
 <div class="search-full">
@@ -1152,8 +1145,7 @@ data-i18n="seeAll"
 id="fullSearch"
 type="text"
 data-i18n-ph="searchPh"
-placeholder="Город, место, категория…"
->
+placeholder="Город, место, категория…">
 
 <span class="search-clear" id="fullSearchClear">✕</span>
 
@@ -1169,15 +1161,12 @@ placeholder="Город, место, категория…"
 
 
 <!-- TRIP -->
-
 <div class="view" id="view-trip">
 
 <div class="page-head">
-
 <div class="title" data-i18n="myTripTitle">
 🧳 Моя поездка
 </div>
-
 </div>
 
 <div id="budgetBox"></div>
@@ -1188,7 +1177,6 @@ placeholder="Город, место, категория…"
 
 
 <!-- PROFILE -->
-
 <div class="view" id="view-profile">
 
 <div class="profile-hero">
@@ -1246,8 +1234,7 @@ placeholder="Город, место, категория…"
 <div
 class="section-title"
 style="font-size:14px"
-data-i18n="language"
->
+data-i18n="language">
 Язык
 </div>
 
@@ -1255,17 +1242,9 @@ data-i18n="language"
 
 <div class="lang-row">
 
-<button class="lang-btn" data-lang="ru">
-🇷🇺 Русский
-</button>
-
-<button class="lang-btn" data-lang="tj">
-🇹🇯 Тоҷикӣ
-</button>
-
-<button class="lang-btn" data-lang="en">
-🇬🇧 English
-</button>
+<button class="lang-btn" data-lang="ru">🇷🇺 Русский</button>
+<button class="lang-btn" data-lang="tj">🇹🇯 Тоҷикӣ</button>
+<button class="lang-btn" data-lang="en">🇬🇧 English</button>
 
 </div>
 
@@ -1279,9 +1258,7 @@ data-i18n="language"
 О приложении
 </div>
 
-<div class="val">
-v1.0
-</div>
+<div class="val">v1.0</div>
 
 </div>
 
@@ -1293,7 +1270,6 @@ v1.0
 
 
 <!-- FAVORITES -->
-
 <div class="view" id="view-favorites">
 
 <div class="page-head">
@@ -1310,21 +1286,16 @@ v1.0
 
 
 <!-- NAV -->
-
 <div class="bottom-nav">
 
 <button class="nav-btn active" data-tab="home">
-
 <div class="ic">🏠</div>
 <div data-i18n="navHome">Главная</div>
-
 </button>
 
 <button class="nav-btn" data-tab="search">
-
 <div class="ic">🔍</div>
 <div data-i18n="navSearch">Поиск</div>
-
 </button>
 
 <button class="nav-btn" data-tab="trip">
@@ -1332,21 +1303,13 @@ v1.0
 <div class="ic">🧳</div>
 <div data-i18n="navTrip">Поездка</div>
 
-<div
-class="nav-badge"
-id="navTripBadge"
-style="display:none"
->
-0
-</div>
+<div class="nav-badge" id="navTripBadge" style="display:none">0</div>
 
 </button>
 
 <button class="nav-btn" data-tab="profile">
-
 <div class="ic">👤</div>
 <div data-i18n="navProfile">Профиль</div>
-
 </button>
 
 </div>
@@ -1355,15 +1318,110 @@ style="display:none"
 
 
 <!-- DETAIL -->
-
 <div class="overlay" id="overlay">
-
 <div class="sheet" id="sheet"></div>
-
 </div>
 
 <div class="toast" id="toast"></div>
 
+
+<!-- =====================================================
+     FIREBASE
+===================================================== -->
+
+<script type="module">
+
+import {
+initializeApp
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+
+import {
+getFirestore,
+collection,
+addDoc,
+getDocs,
+serverTimestamp
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+
+const firebaseConfig = {
+
+apiKey:"AIzaSyAPMFQrHQscClPnbVMtfodiitPuVs8P6Xo",
+
+authDomain:"shohin-travel-shtjk.firebaseapp.com",
+
+projectId:"shohin-travel-shtjk",
+
+storageBucket:"shohin-travel-shtjk.firebasestorage.app",
+
+messagingSenderId:"194967040418",
+
+appId:"1:194967040418:web:87754c40230d36386582fb",
+
+measurementId:"G-R1CZNSRDCL"
+
+};
+
+
+try{
+
+const firebaseApp =
+initializeApp(firebaseConfig);
+
+const db =
+getFirestore(firebaseApp);
+
+
+/*
+   Делаем Firebase доступным
+   для основного кода приложения.
+*/
+
+window.firebaseApp = firebaseApp;
+window.db = db;
+
+window.firebaseTools = {
+
+collection,
+addDoc,
+getDocs,
+serverTimestamp
+
+};
+
+
+console.log(
+"🔥 Firebase подключён:",
+firebaseConfig.projectId
+);
+
+
+window.dispatchEvent(
+new CustomEvent("firebase-ready")
+);
+
+
+}catch(error){
+
+console.error(
+"Firebase error:",
+error
+);
+
+window.dispatchEvent(
+new CustomEvent("firebase-error",{
+detail:error
+})
+);
+
+}
+
+</script>
+
+
+<!-- =====================================================
+     ОСНОВНОЙ КОД ПРИЛОЖЕНИЯ
+===================================================== -->
 
 <script>
 
@@ -1371,7 +1429,7 @@ style="display:none"
    CATEGORIES
 ========================= */
 
-const CATEGORIES = [
+const CATEGORIES=[
 
 {
 id:"all",
@@ -1416,7 +1474,7 @@ label:"Отели"
    CITIES
 ========================= */
 
-const CITIES = [
+const CITIES=[
 
 {
 id:"c1",
@@ -1527,7 +1585,7 @@ cost:0
    PLACES
 ========================= */
 
-const PLACES = [
+const PLACES=[
 
 {
 id:"p1",
@@ -1668,11 +1726,13 @@ const ALL_ITEMS=[
 ];
 
 const ADS=[
+
 {
 title:"SHOHIN TRAVEL SHTJK",
 desc:"Ваш надежный гид по Таджикистану",
 icon:"🧭"
 }
+
 ];
 
 
@@ -1824,6 +1884,7 @@ favorites:[],
 trip:[]
 };
 
+
 const STORAGE_KEYS={
 fav:"shtjk_favorites_v3",
 trip:"shtjk_trip_v3",
@@ -1863,24 +1924,130 @@ state.lang="ru";
 }
 
 function saveFavorites(){
+
 localStorage.setItem(
 STORAGE_KEYS.fav,
 JSON.stringify(state.favorites)
 );
+
 }
 
 function saveTrip(){
+
 localStorage.setItem(
 STORAGE_KEYS.trip,
 JSON.stringify(state.trip)
 );
+
 }
 
 function saveLang(){
+
 localStorage.setItem(
 STORAGE_KEYS.lang,
 state.lang
 );
+
+}
+
+
+/* =========================
+   FIREBASE TEST
+========================= */
+
+function firebaseReady(){
+
+return !!(
+window.db &&
+window.firebaseTools
+);
+
+}
+
+async function testFirebase(){
+
+const status=
+document.getElementById("firebaseStatus");
+
+if(!status)return;
+
+if(!firebaseReady()){
+
+status.textContent=
+"⚠️ Firebase пока недоступен";
+
+status.style.display="block";
+
+return;
+
+}
+
+status.textContent=
+"🔥 Firebase подключён";
+
+status.style.display="block";
+
+setTimeout(()=>{
+
+status.style.display="none";
+
+},2500);
+
+}
+
+
+/*
+   Эта функция создаёт тестовую
+   запись только если мы сами
+   её вызовем.
+
+   Сейчас автоматически ничего
+   в Firestore не записываем.
+*/
+
+async function saveTestToFirebase(){
+
+if(!firebaseReady()){
+
+showToast("Firebase ещё не подключён");
+
+return;
+
+}
+
+try{
+
+const ref=
+await window.firebaseTools.addDoc(
+
+window.firebaseTools.collection(
+window.db,
+"app_tests"
+),
+
+{
+app:"SHOHIN TRAVEL SHTJK",
+createdAt:
+window.firebaseTools.serverTimestamp()
+}
+
+);
+
+console.log(
+"Firebase document:",
+ref.id
+);
+
+showToast("Firebase работает ✅");
+
+}catch(error){
+
+console.error(error);
+
+showToast("Ошибка Firebase");
+
+}
+
 }
 
 
@@ -2023,8 +2190,7 @@ CATEGORIES.map(c=>`
 
 <button
 class="chip ${c.id===state.category?"active":""}"
-data-cat="${c.id}"
->
+data-cat="${c.id}">
 <span>${c.icon}</span>
 <span>${c.label}</span>
 </button>
@@ -2084,25 +2250,24 @@ function renderCitiesRail(){
 const rail=
 document.getElementById("citiesRail");
 
+if(!rail)return;
+
 rail.innerHTML=
 CITIES.map((c,i)=>`
 
 <div
 class="city-card"
-data-id="${c.id}"
->
+data-id="${c.id}">
 
 <div
 class="thumb"
-style="background:${thumbBg(c,i)}"
->
+style="background:${thumbBg(c,i)}">
 
 ${c.icon}
 
 <div
 class="fav-dot"
-data-fav="${c.id}"
->
+data-fav="${c.id}">
 ${isFav(c.id)?"❤️":"🤍"}
 </div>
 
@@ -2138,18 +2303,18 @@ function renderPlacesGrid(){
 const grid=
 document.getElementById("placesGrid");
 
+if(!grid)return;
+
 grid.innerHTML=
 PLACES.map((p,i)=>`
 
 <div
 class="place-card"
-data-id="${p.id}"
->
+data-id="${p.id}">
 
 <div
 class="thumb"
-style="background:${thumbBg(p,i)}"
->
+style="background:${thumbBg(p,i)}">
 
 ${p.icon}
 
@@ -2252,9 +2417,7 @@ return`
 
 <div class="empty-state">
 
-<div class="glyph">
-🧭
-</div>
+<div class="glyph">🧭</div>
 
 <div class="txt">
 
@@ -2280,13 +2443,11 @@ ${results.map((item,i)=>`
 
 <div
 class="list-row"
-data-id="${item.id}"
->
+data-id="${item.id}">
 
 <div
 class="thumb"
-style="background:${thumbBg(item,i)}"
->
+style="background:${thumbBg(item,i)}">
 ${item.icon}
 </div>
 
@@ -2372,6 +2533,8 @@ function renderSearchResults(){
 const box=
 document.getElementById("searchResults");
 
+if(!box)return;
+
 box.innerHTML=
 renderResultsList(
 filterItems()
@@ -2430,9 +2593,7 @@ list.innerHTML=`
 
 <div class="empty-state">
 
-<div class="glyph">
-🧳
-</div>
+<div class="glyph">🧳</div>
 
 <div class="txt">
 
@@ -2486,8 +2647,7 @@ items.map((item,i)=>`
 
 <div
 class="trip-item"
-data-id="${item.id}"
->
+data-id="${item.id}">
 
 <div class="idx">
 ${i+1}
@@ -2495,8 +2655,7 @@ ${i+1}
 
 <div
 class="thumb"
-style="background:${thumbBg(item,i)}"
->
+style="background:${thumbBg(item,i)}">
 ${item.icon}
 </div>
 
@@ -2514,8 +2673,7 @@ ${itemLocLabel(item)}
 
 <button
 class="rm"
-data-rm-trip="${item.id}"
->
+data-rm-trip="${item.id}">
 ✕
 </button>
 
@@ -2527,8 +2685,7 @@ actions.innerHTML=`
 
 <button
 class="btn btn-danger-ghost btn-block"
-id="clearTripBtn"
->
+id="clearTripBtn">
 ${t("clearTrip")}
 </button>
 
@@ -2605,9 +2762,7 @@ list.innerHTML=`
 
 <div class="empty-state">
 
-<div class="glyph">
-❤️
-</div>
+<div class="glyph">❤️</div>
 
 <div class="txt">
 
@@ -2799,8 +2954,7 @@ sheet.innerHTML=`
 
 <div
 class="sheet-hero"
-style="background:${thumbBg(item,1)}"
->
+style="background:${thumbBg(item,1)}">
 
 ${item.icon}
 
@@ -2811,8 +2965,7 @@ ${cat.label}
 
 <button
 class="sheet-close"
-id="sheetClose"
->
+id="sheetClose">
 ✕
 </button>
 
@@ -2897,20 +3050,25 @@ ${item.phone}
 <div class="sheet-map-box">
 
 <div>
+
 🗺️ ${t("mapNote")}
+
 <br>
+
 <b>
 ${item.coords.lat.toFixed(4)},
 ${item.coords.lng.toFixed(4)}
 </b>
+
 </div>
 
 <a
 class="map-link"
 href="${mapUrl}"
-target="_blank"
->
+target="_blank">
+
 ${t("openMap")}
+
 </a>
 
 </div>
@@ -2921,12 +3079,9 @@ ${t("openMap")}
 
 <button
 class="act-btn ${isInTrip(item.id)?"on":""}"
-id="sheetTripBtn"
->
+id="sheetTripBtn">
 
-<div class="ic">
-🧳
-</div>
+<div class="ic">🧳</div>
 
 <div>
 ${isInTrip(item.id)
@@ -2938,8 +3093,7 @@ ${isInTrip(item.id)
 
 <button
 class="act-btn ${isFav(item.id)?"on":""}"
-id="sheetFavBtn"
->
+id="sheetFavBtn">
 
 <div class="ic">
 ${isFav(item.id)?"❤️":"🤍"}
@@ -3257,6 +3411,39 @@ refreshAllViews();
 
 
 /* =========================
+   FIREBASE EVENTS
+========================= */
+
+window.addEventListener(
+"firebase-ready",
+()=>{
+
+testFirebase();
+
+}
+);
+
+window.addEventListener(
+"firebase-error",
+()=>{
+
+const status=
+document.getElementById("firebaseStatus");
+
+if(status){
+
+status.textContent=
+"⚠️ Ошибка подключения Firebase";
+
+status.style.display="block";
+
+}
+
+}
+);
+
+
+/* =========================
    START
 ========================= */
 
@@ -3277,6 +3464,8 @@ applyLanguage();
 bindGlobalEvents();
 
 refreshAllViews();
+
+testFirebase();
 
 }
 
