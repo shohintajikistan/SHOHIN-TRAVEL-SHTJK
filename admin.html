@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#123C2C">
+<title>SHOHIN TRAVEL — ADMIN</title>
+
+<style>
+*{
+box-sizing:border-box;
+margin:0;
+padding:0
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#FBF8F2;
+color:#16241C;
+min-height:100vh
+}
+
+header{
+background:#123C2C;
+color:white;
+padding:20px;
+text-align:center
+}
+
+header h1{
+font-size:21px
+}
+
+header p{
+font-size:12px;
+color:#F3D08D;
+margin-top:5px
+}
+
+.container{
+max-width:600px;
+margin:auto;
+padding:18px
+}
+
+.card{
+background:white;
+border:1px solid #E4DFD2;
+border-radius:16px;
+padding:18px;
+margin-bottom:15px;
+box-shadow:0 5px 18px rgba(0,0,0,.08)
+}
+
+h2{
+font-size:18px;
+margin-bottom:14px;
+color:#123C2C
+}
+
+input,select,textarea{
+width:100%;
+padding:13px;
+border:1px solid #D8D4C9;
+border-radius:10px;
+margin-bottom:10px;
+font-size:14px;
+background:white
+}
+
+textarea{
+min-height:90px;
+resize:vertical
+}
+
+button{
+border:0;
+border-radius:10px;
+padding:13px 16px;
+font-weight:bold;
+cursor:pointer
+}
+
+.btn{
+width:100%;
+background:#175038;
+color:white;
+font-size:14px
+}
+
+.btn-danger{
+background:#C1462E;
+color:white
+}
+
+.btn-secondary{
+background:#E4F1EA;
+color:#175038
+}
+
+.hidden{
+display:none
+}
+
+.message{
+padding:10px;
+border-radius:10px;
+margin-bottom:12px;
+font-size:13px;
+background:#E4F1EA;
+color:#175038
+}
+
+.item{
+border:1px solid #E4DFD2;
+border-radius:12px;
+padding:12px;
+margin-top:10px
+}
+
+.item-title{
+font-weight:bold;
+margin-bottom:5px
+}
+
+.item-info{
+font-size:12px;
+color:#4B5E52;
+line-height:1.5;
+margin-bottom:9px
+}
+
+.actions{
+display:flex;
+gap:8px
+}
+
+.actions button{
+flex:1
+}
+
+.logout{
+margin-top:10px;
+background:#fff;
+border:1px solid #C1462E;
+color:#C1462E;
+width:100%
+}
+
+.status{
+font-size:12px;
+color:#4B5E52;
+margin-bottom:10px
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>SHOHIN TRAVEL SHTJK</h1>
+<p>ADMIN PANEL</p>
+</header>
+
+<div class="container">
+
+<!-- LOGIN -->
+
+<div id="loginBox" class="card">
+
+<h2>🔐 Вход администратора</h2>
+
+<div id="loginMessage"></div>
+
+<input
+id="email"
+type="email"
+placeholder="Email администратора"
+>
+
+<input
+id="password"
+type="password"
+placeholder="Пароль"
+>
+
+<button
+class="btn"
+id="loginBtn"
+>
+Войти
+</button>
+
+</div>
+
+
+<!-- ADMIN -->
+
+<div id="adminBox" class="hidden">
+
+<div class="card">
+
+<h2>👤 Администратор</h2>
+
+<div class="status" id="adminEmail"></div>
+
+<button
+class="logout"
+id="logoutBtn"
+>
+Выйти
+</button>
+
+</div>
+
+
+<!-- ADD -->
+
+<div class="card">
+
+<h2>➕ Добавить объект</h2>
+
+<select id="type">
+
+<option value="city">
+🏙️ Город
+</option>
+
+<option value="place">
+🏔️ Туристическое место
+</option>
+
+<option value="hotel">
+🏨 Отель
+</option>
+
+<option value="restaurant">
+🍽️ Ресторан
+</option>
+
+</select>
+
+<input
+id="name"
+placeholder="Название"
+>
+
+<input
+id="city"
+placeholder="Город"
+>
+
+<input
+id="region"
+placeholder="Область / регион"
+>
+
+<select id="category">
+
+<option value="city">🏙️ Город</option>
+<option value="nature">🏔️ Природа</option>
+<option value="history">🕌 История</option>
+<option value="food">🍽️ Еда</option>
+<option value="hotel">🏨 Отель</option>
+
+</select>
+
+<textarea
+id="description"
+placeholder="Описание"
+></textarea>
+
+<input
+id="lat"
+type="number"
+step="any"
+placeholder="Широта (latitude)"
+>
+
+<input
+id="lng"
+type="number"
+step="any"
+placeholder="Долгота (longitude)"
+>
+
+<input
+id="rating"
+type="number"
+step="0.1"
+min="0"
+max="5"
+placeholder="Рейтинг, например 4.8"
+>
+
+<input
+id="price"
+placeholder="Цена, например 30 сомони"
+>
+
+<input
+id="hours"
+placeholder="Часы работы"
+>
+
+<input
+id="phone"
+placeholder="Телефон"
+>
+
+<button
+class="btn"
+id="addBtn"
+>
+💾 Сохранить
+</button>
+
+</div>
+
+
+<!-- LIST -->
+
+<div class="card">
+
+<h2>📋 Объекты</h2>
+
+<div id="itemsList">
+Загрузка...
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FIREBASE -->
+
+<script type="module">
+
+import {
+initializeApp
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+
+import {
+getAuth,
+signInWithEmailAndPassword,
+onAuthStateChanged,
+signOut
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+import {
+getFirestore,
+collection,
+addDoc,
+getDocs,
+deleteDoc,
+doc
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+
+/* =========================
+   FIREBASE CONFIG
+========================= */
+
+const firebaseConfig = {
+
+apiKey:
+"AIzaSyAPMFQrHQscClPnbVMtfodiitPuVs8P6Xo",
+
+authDomain:
+"shohin-travel-shtjk.firebaseapp.com",
+
+projectId:
+"shohin-travel-shtjk",
+
+storageBucket:
+"shohin-travel-shtjk.firebasestorage.app",
+
+messagingSenderId:
+"194967040418",
+
+appId:
+"1:194967040418:web:87754c40230d36386582fb",
+
+measurementId:
+"G-R1CZNSRDCL"
+
+};
+
+
+/* =========================
+   INIT
+========================= */
+
+const app =
+initializeApp(firebaseConfig);
+
+const auth =
+getAuth(app);
+
+const db =
+getFirestore(app);
+
+
+/* =========================
+   ADMIN UID
+========================= */
+
+const ADMIN_UID =
+"TwxXqD7YQCT1H8GzkIhImCE8Uxs2";
+
+
+/* =========================
+   ELEMENTS
+========================= */
+
+const loginBox =
+document.getElementById("loginBox");
+
+const adminBox =
+document.getElementById("adminBox");
+
+const loginMessage =
+document.getElementById("loginMessage");
+
+const itemsList =
+document.getElementById("itemsList");
+
+
+/* =========================
+   LOGIN
+========================= */
+
+document
+.getElementById("loginBtn")
+.onclick =
+async()=>{
+
+const email =
+document
+.getElementById("email")
+.value
+.trim();
+
+const password =
+document
+.getElementById("password")
+.value;
+
+loginMessage.textContent="";
+
+if(!email || !password){
+
+loginMessage.textContent=
+"Введите email и пароль.";
+
+return;
+
+}
+
+try{
+
+await signInWithEmailAndPassword(
+auth,
+email,
+password
+);
+
+}catch(error){
+
+console.error(error);
+
+loginMessage.textContent=
+"Ошибка входа. Проверьте email и пароль.";
+
+}
+
+};
+
+
+/* =========================
+   AUTH STATE
+========================= */
+
+onAuthStateChanged(
+auth,
+async user=>{
+
+if(
+user &&
+user.uid===ADMIN_UID
+){
+
+loginBox.classList.add("hidden");
+
+adminBox.classList.remove("hidden");
+
+document
+.getElementById("adminEmail")
+.textContent=
+"Выполнен вход: "+user.email;
+
+loadItems();
+
+}else{
+
+if(user){
+
+await signOut(auth);
+
+}
+
+loginBox.classList.remove("hidden");
+
+adminBox.classList.add("hidden");
+
+}
+
+});
+
+
+/* =========================
+   LOGOUT
+========================= */
+
+document
+.getElementById("logoutBtn")
+.onclick =
+async()=>{
+
+await signOut(auth);
+
+};
+
+
+/* =========================
+   ADD ITEM
+========================= */
+
+document
+.getElementById("addBtn")
+.onclick =
+async()=>{
+
+const user =
+auth.currentUser;
+
+if(
+!user ||
+user.uid!==ADMIN_UID
+){
+
+alert("Нет доступа.");
+
+return;
+
+}
+
+const type =
+document
+.getElementById("type")
+.value;
+
+const name =
+document
+.getElementById("name")
+.value
+.trim();
+
+const city =
+document
+.getElementById("city")
+.value
+.trim();
+
+const region =
+document
+.getElementById("region")
+.value
+.trim();
+
+const category =
+document
+.getElementById("category")
+.value;
+
+const description =
+document
+.getElementById("description")
+.value
+.trim();
+
+const lat =
+Number(
+document
+.getElementById("lat")
+.value
+);
+
+const lng =
+Number(
+document
+.getElementById("lng")
+.value
+);
+
+const rating =
+Number(
+document
+.getElementById("rating")
+.value
+)||0;
+
+const price =
+document
+.getElementById("price")
+.value
+.trim();
+
+const hours =
+document
+.getElementById("hours")
+.value
+.trim();
+
+const phone =
+document
+.getElementById("phone")
+.value
+.trim();
+
+
+if(!name){
+
+alert("Введите название.");
+
+return;
+
+}
+
+
+try{
+
+await addDoc(
+collection(db,"places"),
+{
+
+type,
+name,
+city,
+region,
+category,
+description,
+
+coords:{
+lat,
+lng
+},
+
+rating,
+price,
+hours,
+phone,
+
+createdAt:
+new Date()
+
+}
+
+);
+
+alert("Объект добавлен!");
+
+clearForm();
+
+loadItems();
+
+}catch(error){
+
+console.error(error);
+
+alert(
+"Ошибка сохранения: "+
+error.message
+);
+
+}
+
+};
+
+
+/* =========================
+   CLEAR FORM
+========================= */
+
+function clearForm(){
+
+[
+"name",
+"city",
+"region",
+"description",
+"lat",
+"lng",
+"rating",
+"price",
+"hours",
+"phone"
+]
+.forEach(id=>{
+
+document
+.getElementById(id)
+.value="";
+
+});
+
+}
+
+
+/* =========================
+   LOAD ITEMS
+========================= */
+
+async function loadItems(){
+
+itemsList.textContent=
+"Загрузка...";
+
+try{
+
+const snapshot =
+await getDocs(
+collection(db,"places")
+);
+
+if(snapshot.empty){
+
+itemsList.innerHTML=
+"<p>Пока нет объектов.</p>";
+
+return;
+
+}
+
+itemsList.innerHTML="";
+
+snapshot.forEach(item=>{
+
+const data =
+item.data();
+
+const div =
+document.createElement("div");
+
+div.className="item";
+
+div.innerHTML=`
+
+<div class="item-title">
+${data.name||"Без названия"}
+</div>
+
+<div class="item-info">
+
+Тип: ${data.type||"—"}<br>
+
+Категория:
+${data.category||"—"}<br>
+
+Город:
+${data.city||"—"}<br>
+
+Регион:
+${data.region||"—"}<br>
+
+Рейтинг:
+${data.rating||0}
+
+</div>
+
+<div class="actions">
+
+<button
+class="btn-danger"
+data-delete="${item.id}"
+>
+🗑️ Удалить
+</button>
+
+</div>
+
+`;
+
+itemsList.appendChild(div);
+
+});
+
+
+itemsList
+.querySelectorAll("[data-delete]")
+.forEach(btn=>{
+
+btn.onclick=
+()=>deleteItem(
+btn.dataset.delete
+);
+
+});
+
+
+}catch(error){
+
+console.error(error);
+
+itemsList.innerHTML=
+"<p>Ошибка загрузки данных.</p>";
+
+}
+
+}
+
+
+/* =========================
+   DELETE
+========================= */
+
+async function deleteItem(id){
+
+if(
+!confirm(
+"Удалить этот объект?"
+)
+)return;
+
+try{
+
+await deleteDoc(
+doc(
+db,
+"places",
+id
+)
+);
+
+loadItems();
+
+}catch(error){
+
+console.error(error);
+
+alert(
+"Ошибка удаления: "+
+error.message
+);
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
