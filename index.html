@@ -2,19 +2,12 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta name="theme-color" content="#123C2C">
-
-<meta name="description"
-content="SHOHIN TRAVEL SHTJK — путеводитель по Таджикистану">
-
+<meta name="description" content="SHOHIN TRAVEL SHTJK — путеводитель по Таджикистану">
 <title>SHOHIN TRAVEL SHTJK</title>
 
 <style>
-
 :root{
 --pine-950:#0B2A20;
 --pine-800:#123C2C;
@@ -22,28 +15,22 @@ content="SHOHIN TRAVEL SHTJK — путеводитель по Таджикис�
 --pine-600:#1E6A48;
 --pine-500:#278A5B;
 --pine-100:#E4F1EA;
-
 --gold-600:#C6852B;
 --gold-500:#E3A438;
 --gold-300:#F3D08D;
-
 --cream:#FBF8F2;
 --cream-2:#F3EEE2;
-
 --ink:#16241C;
 --ink-soft:#4B5E52;
 --line:#E4DFD2;
 --white:#fff;
 --danger:#C1462E;
-
 --radius-lg:20px;
 --radius-md:14px;
 --radius-sm:10px;
-
 --shadow-sm:0 2px 8px rgba(11,42,32,.08);
 --shadow-md:0 8px 24px rgba(11,42,32,.12);
 --shadow-lg:0 16px 40px rgba(11,42,32,.20);
-
 --font-display:"Iowan Old Style","Georgia","Noto Serif",serif;
 --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif
 }
@@ -143,8 +130,7 @@ color:var(--pine-600)
 /* HEADER */
 
 .header{
-background:
-linear-gradient(
+background:linear-gradient(
 180deg,
 var(--pine-800) 0%,
 var(--pine-700) 62%,
@@ -311,6 +297,17 @@ color:#fff;
 box-shadow:var(--shadow-sm)
 }
 
+/* FIREBASE STATUS */
+
+.firebase-status{
+margin:8px 18px 0;
+padding:9px 12px;
+border-radius:10px;
+font-size:11px;
+background:var(--pine-100);
+color:var(--pine-700)
+}
+
 /* LOADING */
 
 .loading{
@@ -331,9 +328,7 @@ animation:spin .7s linear infinite
 }
 
 @keyframes spin{
-to{
-transform:rotate(360deg)
-}
+to{transform:rotate(360deg)}
 }
 
 /* RAIL */
@@ -551,25 +546,13 @@ font-size:13.5px;
 line-height:1.5
 }
 
-/* FIREBASE STATUS */
-
-.firebase-status{
-margin:8px 18px 0;
-padding:9px 12px;
-border-radius:10px;
-font-size:11px;
-background:var(--pine-100);
-color:var(--pine-700)
-}
-
 /* ADS */
 
 .ad-slot{
 margin:2px 18px 16px;
 border-radius:var(--radius-md);
 border:1.5px dashed var(--gold-500);
-background:
-linear-gradient(
+background:linear-gradient(
 135deg,
 var(--gold-300),
 var(--cream-2) 130%
@@ -630,10 +613,7 @@ background:rgba(251,248,242,.96);
 backdrop-filter:blur(6px);
 border-top:1px solid var(--line);
 display:flex;
-padding:
-8px
-6px
-calc(8px + env(safe-area-inset-bottom));
+padding:8px 6px calc(8px + env(safe-area-inset-bottom));
 z-index:40
 }
 
@@ -707,8 +687,7 @@ gap:13px
 width:56px;
 height:56px;
 border-radius:50%;
-background:
-linear-gradient(
+background:linear-gradient(
 145deg,
 var(--gold-500),
 var(--gold-600)
@@ -1137,9 +1116,7 @@ font-size:18px
 position:fixed;
 left:50%;
 bottom:96px;
-transform:
-translateX(-50%)
-translateY(20px);
+transform:translateX(-50%) translateY(20px);
 background:var(--pine-800);
 color:#fff;
 font-size:12.5px;
@@ -1157,11 +1134,8 @@ box-shadow:var(--shadow-lg)
 
 .toast.show{
 opacity:1;
-transform:
-translateX(-50%)
-translateY(0)
+transform:translateX(-50%) translateY(0)
 }
-
 </style>
 </head>
 
@@ -1179,33 +1153,22 @@ translateY(0)
 
 <div class="logo">
 
-<div class="logo-mark">
-S
-</div>
+<div class="logo-mark">S</div>
 
 <div class="logo-text">
-
 SHOHIN TRAVEL
-
-<small>
-SHTJK 🇹🇯
-</small>
-
+<small>SHTJK 🇹🇯</small>
 </div>
 
 </div>
 
-<button
-class="header-icon-btn"
-data-nav="profile">
+<button class="header-icon-btn" data-nav="profile">
 👤
 </button>
 
 </div>
 
-<div
-class="header-title"
-data-i18n="homeTitle">
+<div class="header-title" data-i18n="homeTitle">
 Путешествуй по Таджикистану 🇹🇯
 </div>
 
@@ -1217,11 +1180,10 @@ data-i18n="homeTitle">
 id="homeSearch"
 type="text"
 data-i18n-ph="searchPh"
-placeholder="Город, место, категория…">
+placeholder="Город, место, категория…"
+>
 
-<span
-class="search-clear"
-id="homeSearchClear">
+<span class="search-clear" id="homeSearchClear">
 ✕
 </span>
 
@@ -1230,32 +1192,30 @@ id="homeSearchClear">
 <svg
 class="ridge"
 viewBox="0 0 480 64"
-preserveAspectRatio="none">
+preserveAspectRatio="none"
+>
 
 <polygon
 points="0,64 0,40 60,18 120,36 180,10 250,32 320,14 390,38 440,22 480,40 480,64"
 fill="#1E6A48"
-opacity=".55"/>
+opacity=".55"
+/>
 
 <polygon
 points="0,64 0,50 70,30 140,46 210,26 280,44 350,28 420,48 480,32 480,64"
 fill="#175038"
-opacity=".75"/>
+opacity=".75"
+/>
 
 </svg>
 
 </div>
 
-<div
-class="firebase-status"
-id="firebaseStatus">
+<div class="firebase-status" id="firebaseStatus">
 🔄 Подключение к базе...
 </div>
 
-<div
-class="chip-row"
-id="catChips">
-</div>
+<div class="chip-row" id="catChips"></div>
 
 <div id="homeDefaultSections">
 
@@ -1263,9 +1223,7 @@ id="catChips">
 
 <div class="section-head">
 
-<div
-class="section-title"
-data-i18n="popularCities">
+<div class="section-title" data-i18n="popularCities">
 Популярные города
 </div>
 
@@ -1273,7 +1231,8 @@ data-i18n="popularCities">
 class="section-link"
 data-nav="search"
 data-cat="city"
-data-i18n="seeAll">
+data-i18n="seeAll"
+>
 Все →
 </button>
 
@@ -1281,30 +1240,23 @@ data-i18n="seeAll">
 
 </div>
 
-<div
-class="rail"
-id="citiesRail">
-</div>
+<div class="rail" id="citiesRail"></div>
 
-<div
-class="ad-slot"
-id="adSlot1">
-</div>
+<div class="ad-slot" id="adSlot1"></div>
 
 <div class="section">
 
 <div class="section-head">
 
-<div
-class="section-title"
-data-i18n="interestingPlaces">
+<div class="section-title" data-i18n="interestingPlaces">
 Интересные места
 </div>
 
 <button
 class="section-link"
 data-nav="search"
-data-i18n="seeAll">
+data-i18n="seeAll"
+>
 Все →
 </button>
 
@@ -1312,36 +1264,23 @@ data-i18n="seeAll">
 
 </div>
 
-<div
-class="grid"
-id="placesGrid">
-</div>
+<div class="grid" id="placesGrid"></div>
 
-<div
-class="ad-slot"
-id="adSlot2">
-</div>
+<div class="ad-slot" id="adSlot2"></div>
 
 </div>
 
-<div
-id="homeFilteredSections"
-style="display:none">
-</div>
+<div id="homeFilteredSections" style="display:none"></div>
 
 </div>
 
 <!-- SEARCH -->
 
-<div
-class="view"
-id="view-search">
+<div class="view" id="view-search">
 
 <div class="page-head">
 
-<div
-class="title"
-data-i18n="searchTitle">
+<div class="title" data-i18n="searchTitle">
 Поиск и категории
 </div>
 
@@ -1357,11 +1296,10 @@ data-i18n="searchTitle">
 id="fullSearch"
 type="text"
 data-i18n-ph="searchPh"
-placeholder="Город, место, категория…">
+placeholder="Город, место, категория…"
+>
 
-<span
-class="search-clear"
-id="fullSearchClear">
+<span class="search-clear" id="fullSearchClear">
 ✕
 </span>
 
@@ -1369,45 +1307,33 @@ id="fullSearchClear">
 
 </div>
 
-<div
-class="chip-row"
-id="catChips2">
-</div>
+<div class="chip-row" id="catChips2"></div>
 
-<div id="searchResults">
-</div>
+<div id="searchResults"></div>
 
 </div>
 
 <!-- TRIP -->
 
-<div
-class="view"
-id="view-trip">
+<div class="view" id="view-trip">
 
 <div class="page-head">
 
-<div
-class="title"
-data-i18n="myTripTitle">
+<div class="title" data-i18n="myTripTitle">
 🧳 Моя поездка
 </div>
 
 </div>
 
 <div id="budgetBox"></div>
-
 <div id="tripList"></div>
-
 <div id="tripActions"></div>
 
 </div>
 
 <!-- PROFILE -->
 
-<div
-class="view"
-id="view-profile">
+<div class="view" id="view-profile">
 
 <div class="profile-hero">
 
@@ -1417,15 +1343,11 @@ id="view-profile">
 
 <div>
 
-<div
-class="profile-name"
-data-i18n="guestName">
+<div class="profile-name" data-i18n="guestName">
 Гость
 </div>
 
-<div
-class="profile-sub"
-data-i18n="noRegister">
+<div class="profile-sub" data-i18n="noRegister">
 Без регистрации · офлайн-режим
 </div>
 
@@ -1435,21 +1357,15 @@ data-i18n="noRegister">
 
 <div class="menu-list">
 
-<button
-class="menu-item"
-data-nav="favorites">
+<button class="menu-item" data-nav="favorites">
 
 <div class="ic">❤️</div>
 
-<div
-class="label"
-data-i18n="favorites">
+<div class="label" data-i18n="favorites">
 Избранное
 </div>
 
-<div
-class="val"
-id="favCount">
+<div class="val" id="favCount">
 0
 </div>
 
@@ -1457,21 +1373,15 @@ id="favCount">
 
 </button>
 
-<button
-class="menu-item"
-data-nav="trip">
+<button class="menu-item" data-nav="trip">
 
 <div class="ic">🧳</div>
 
-<div
-class="label"
-data-i18n="myTrip">
+<div class="label" data-i18n="myTrip">
 Моя поездка
 </div>
 
-<div
-class="val"
-id="tripCount">
+<div class="val" id="tripCount">
 0
 </div>
 
@@ -1481,14 +1391,9 @@ id="tripCount">
 
 </div>
 
-<div
-class="section"
-style="padding-top:6px">
+<div class="section" style="padding-top:6px">
 
-<div
-class="section-title"
-style="font-size:14px"
-data-i18n="language">
+<div class="section-title" style="font-size:14px" data-i18n="language">
 Язык
 </div>
 
@@ -1510,17 +1415,13 @@ data-i18n="language">
 
 </div>
 
-<div
-class="menu-list"
-style="margin-top:18px">
+<div class="menu-list" style="margin-top:18px">
 
 <div class="menu-item">
 
 <div class="ic">ℹ️</div>
 
-<div
-class="label"
-data-i18n="aboutApp">
+<div class="label" data-i18n="aboutApp">
 О приложении
 </div>
 
@@ -1532,24 +1433,17 @@ v3.0
 
 </div>
 
-<div
-class="ad-slot"
-id="adSlot3">
-</div>
+<div class="ad-slot" id="adSlot3"></div>
 
 </div>
 
 <!-- FAVORITES -->
 
-<div
-class="view"
-id="view-favorites">
+<div class="view" id="view-favorites">
 
 <div class="page-head">
 
-<div
-class="title"
-data-i18n="favoritesTitle">
+<div class="title" data-i18n="favoritesTitle">
 ❤️ Избранное
 </div>
 
@@ -1563,9 +1457,7 @@ data-i18n="favoritesTitle">
 
 <div class="bottom-nav">
 
-<button
-class="nav-btn active"
-data-tab="home">
+<button class="nav-btn active" data-tab="home">
 
 <div class="ic">🏠</div>
 
@@ -1575,9 +1467,7 @@ data-tab="home">
 
 </button>
 
-<button
-class="nav-btn"
-data-tab="search">
+<button class="nav-btn" data-tab="search">
 
 <div class="ic">🔍</div>
 
@@ -1587,9 +1477,7 @@ data-tab="search">
 
 </button>
 
-<button
-class="nav-btn"
-data-tab="trip">
+<button class="nav-btn" data-tab="trip">
 
 <div class="ic">🧳</div>
 
@@ -1600,15 +1488,14 @@ data-tab="trip">
 <div
 class="nav-badge"
 id="navTripBadge"
-style="display:none">
+style="display:none"
+>
 0
 </div>
 
 </button>
 
-<button
-class="nav-btn"
-data-tab="profile">
+<button class="nav-btn" data-tab="profile">
 
 <div class="ic">👤</div>
 
@@ -1624,24 +1511,19 @@ data-tab="profile">
 
 <!-- DETAIL -->
 
-<div
-class="overlay"
-id="overlay">
+<div class="overlay" id="overlay">
 
-<div
-class="sheet"
-id="sheet">
-</div>
+<div class="sheet" id="sheet"></div>
 
 </div>
 
-<div
-class="toast"
-id="toast">
-</div>
-
+<div class="toast" id="toast"></div>
 
 <script type="module">
+
+/* =========================================================
+FIREBASE
+========================================================= */
 
 import {
 initializeApp
@@ -1657,10 +1539,6 @@ getDocs
 from
 "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
 
-
-/* =====================================================
-FIREBASE
-===================================================== */
 
 const firebaseConfig={
 
@@ -1694,96 +1572,120 @@ const db=
 getFirestore(firebaseApp);
 
 
-/* =====================================================
+/* =========================================================
 GITHUB IMAGES
-===================================================== */
+========================================================= */
 
 /*
-   ВАЖНО:
+ВАЖНО:
 
-   Репозиторий:
-   SHOHIN-TRAVEL
+Папка images должна находиться рядом с index.html.
 
-   Папка:
-   images
+Например:
 
-   Например:
-   images/bokhtar.jpg
+index.html
+images/bokhtar.jpg
 
-   GitHub Pages:
-   https://shohintajikistan.github.io/SHOHIN-TRAVEL/images/bokhtar.jpg
+Если GitHub Pages открыл сайт:
+
+https://shohintajikistan.github.io/SHOHIN-TRAVEL/
+
+то картинка:
+
+https://shohintajikistan.github.io/SHOHIN-TRAVEL/images/bokhtar.jpg
+
+Мы НЕ прописываем домен вручную.
+
+Код сам определяет адрес сайта.
 */
 
-const GITHUB_IMAGE_BASE=
-"https://shohintajikistan.github.io/SHOHIN-TRAVEL/images/";
+const IMAGE_FOLDER="images/";
 
 
-/* =====================================================
-IMAGE URL BUILDER
-===================================================== */
-
-function getImageUrl(data){
+function getImageUrl(item){
 
 /*
-   1. Если imageUrl уже указан —
-      используем его.
+1. Если в Firestore есть imageName:
+
+bokhtar.jpg
+
+получаем:
+
+images/bokhtar.jpg
 */
 
-if(data.imageUrl){
+let imageName=
+item.imageName||
+"";
 
-return data.imageUrl;
+
+imageName=
+String(imageName)
+.trim();
+
+
+if(imageName){
+
+/*
+Если случайно написал:
+
+images/bokhtar.jpg
+
+тоже исправляем.
+*/
+
+imageName=
+imageName
+.replace(/^images[\/\\]/i,"")
+.replace(/^\/+/,"");
+
+
+return new URL(
+IMAGE_FOLDER+
+imageName,
+window.location.href
+).href;
 
 }
 
 
 /*
-   2. Если указано image —
-      тоже поддерживаем.
+Поддержка старого поля imageUrl.
+
+Если оно уже есть —
+используем его.
 */
 
-if(data.image){
+if(item.imageUrl){
 
-return data.image;
+return String(
+item.imageUrl
+).trim();
 
 }
 
 
 /*
-   3. Новый способ:
-      imageName = bokhtar.jpg
-
-      автоматически:
-      images/bokhtar.jpg
+Поддержка старого image.
 */
 
-if(data.imageName){
+if(item.image){
 
-const fileName=
-String(data.imageName).trim();
-
-if(fileName){
-
-return GITHUB_IMAGE_BASE+
-encodeURIComponent(fileName);
+return String(
+item.image
+).trim();
 
 }
 
-}
-
-
-/*
-   4. Если ничего нет —
-      пусто.
-*/
 
 return "";
 
 }
 
 
-/* =====================================================
+/* =========================================================
 CATEGORIES
-===================================================== */
+========================================================= */
 
 const CATEGORIES=[
 
@@ -1826,9 +1728,9 @@ label:"Отели"
 ];
 
 
-/* =====================================================
+/* =========================================================
 ORIGINAL CITIES
-===================================================== */
+========================================================= */
 
 const CITIES=[
 
@@ -1954,12 +1856,12 @@ region:"Хатлонская область",
 country:"tj",
 category:"city",
 description:
-"Один из главных городов юга Таджикистана.",
+"Один из главных городов Хатлонской области.",
 coords:{
 lat:37.8364,
 lng:68.7803
 },
-rating:4.5,
+rating:4.4,
 icon:"🏙️",
 cost:0,
 imageName:"bokhtar.jpg"
@@ -1968,9 +1870,9 @@ imageName:"bokhtar.jpg"
 ];
 
 
-/* =====================================================
+/* =========================================================
 ORIGINAL PLACES
-===================================================== */
+========================================================= */
 
 const PLACES=[
 
@@ -2115,9 +2017,9 @@ imageName:"dastarkhon.jpg"
 ];
 
 
-/* =====================================================
-FIREBASE ITEMS
-===================================================== */
+/* =========================================================
+FIREBASE
+========================================================= */
 
 let FIREBASE_ITEMS=[];
 
@@ -2127,14 +2029,13 @@ let ALL_ITEMS=[
 ];
 
 
-/* =====================================================
+/* =========================================================
 TRANSLATIONS
-===================================================== */
+========================================================= */
 
 const translations={
 
 ru:{
-
 homeTitle:"Путешествуй по Таджикистану 🇹🇯",
 searchPh:"Город, место, категория…",
 popularCities:"Популярные города",
@@ -2174,11 +2075,9 @@ totalBudget:"Примерный бюджет:",
 adLabel:"Реклама",
 firebaseOnline:"🟢 Firebase подключён",
 firebaseError:"🔴 Firebase недоступен"
-
 },
 
 tj:{
-
 homeTitle:"Тоҷикистонро саёҳат кунед 🇹🇯",
 searchPh:"Шаҳр, ҷой, категория…",
 popularCities:"Шаҳрҳои маъмул",
@@ -2218,11 +2117,9 @@ totalBudget:"Буҷети тахминӣ:",
 adLabel:"Реклама",
 firebaseOnline:"🟢 Firebase пайваст аст",
 firebaseError:"🔴 Firebase дастрас нест"
-
 },
 
 en:{
-
 homeTitle:"Explore Tajikistan 🇹🇯",
 searchPh:"City, place, category…",
 popularCities:"Popular cities",
@@ -2262,15 +2159,14 @@ totalBudget:"Estimated budget:",
 adLabel:"Ad",
 firebaseOnline:"🟢 Firebase connected",
 firebaseError:"🔴 Firebase unavailable"
-
 }
 
 };
 
 
-/* =====================================================
+/* =========================================================
 STATE
-===================================================== */
+========================================================= */
 
 const state={
 
@@ -2296,9 +2192,9 @@ localStorage.getItem("shtjk_trip_v4")||"[]"
 };
 
 
-/* =====================================================
+/* =========================================================
 TRANSLATION
-===================================================== */
+========================================================= */
 
 function t(key){
 
@@ -2311,91 +2207,136 @@ key
 }
 
 
-/* =====================================================
-NORMALIZE FIREBASE ITEM
-===================================================== */
+/* =========================================================
+ESCAPE
+========================================================= */
 
-function normalizeFirebaseItem(firebaseDoc){
+function escapeHtml(value){
 
-const data=firebaseDoc.data();
+return String(value??"")
+.replace(/&/g,"&amp;")
+.replace(/</g,"&lt;")
+.replace(/>/g,"&gt;")
+.replace(/"/g,"&quot;")
+.replace(/'/g,"&#039;");
 
-const coords=data.coords||{};
-
-const type=
-data.type||"place";
-
-let category=
-data.category||"nature";
-
-if(
-type==="city"
-){
-category="city";
 }
 
-if(
-type==="hotel"
-){
-category="hotel";
-}
 
-if(
-type==="restaurant"
-){
-category="food";
-}
+/* =========================================================
+LOAD FIREBASE
+========================================================= */
 
-return{
+async function loadFirebasePlaces(){
 
-id:"fb_"+firebaseDoc.id,
+const status=
+document.getElementById("firebaseStatus");
 
-firebaseId:firebaseDoc.id,
+try{
 
-source:"firebase",
+status.textContent=
+"🔄 Загружаем объекты из Firebase...";
 
-type:type,
 
-name:data.name||"Без названия",
+const snapshot=
+await getDocs(
+collection(db,"places")
+);
 
-city:data.city||"",
 
-region:data.region||"Таджикистан",
+FIREBASE_ITEMS=[];
+
+
+snapshot.forEach(firebaseDoc=>{
+
+const data=
+firebaseDoc.data();
+
+
+const coords=
+data.coords||{};
+
+
+const item={
+
+id:
+"fb_"+firebaseDoc.id,
+
+firebaseId:
+firebaseDoc.id,
+
+source:
+"firebase",
+
+type:
+data.type||"place",
+
+name:
+data.name||"Без названия",
+
+city:
+data.city||"",
+
+region:
+data.region||"Таджикистан",
 
 country:"tj",
 
-category:category,
+category:
+data.category||
+(
+data.type==="hotel"
+?"hotel":
+data.type==="restaurant"
+?"food":
+data.type==="city"
+?"city":
+"nature"
+),
 
-description:data.description||"",
+description:
+data.description||"",
 
 coords:{
 lat:Number(coords.lat)||0,
 lng:Number(coords.lng)||0
 },
 
-rating:Number(data.rating)||0,
+rating:
+Number(data.rating)||0,
 
-price:data.price||"",
+price:
+data.price||"",
 
-numCost:Number(data.numCost)||0,
+numCost:
+Number(data.numCost)||0,
 
-hours:data.hours||"",
+hours:
+data.hours||"",
 
-phone:data.phone||"",
+phone:
+data.phone||"",
 
-icon:data.icon||
+icon:
+data.icon||
 (
-type==="hotel"
+data.type==="hotel"
 ?"🏨":
-type==="restaurant"
+data.type==="restaurant"
 ?"🍽️":
-type==="city"
+data.type==="city"
 ?"🏙️":
 "🏔️"
 ),
 
 /*
-   ВАЖНО:
-   imageName берём из Firestore.
+НОВОЕ ПОЛЕ:
+
+imageName
+
+Например:
+
+bokhtar.jpg
 */
 
 imageName:
@@ -2403,63 +2344,81 @@ data.imageName||
 "",
 
 /*
-   Ссылка строится автоматически.
+Старые поля тоже поддерживаем.
 */
 
 imageUrl:
-getImageUrl(data)
+data.imageUrl||
+"",
+
+image:
+data.image||
+""
 
 };
 
-}
-
-
-/* =====================================================
-LOAD FIREBASE
-===================================================== */
-
-async function loadFirebasePlaces(){
-
-const status=
-document.getElementById(
-"firebaseStatus"
-);
-
-try{
-
-status.textContent=
-"🔄 Загружаем объекты из Firebase...";
-
-const snapshot=
-await getDocs(
-collection(db,"places")
-);
-
-FIREBASE_ITEMS=[];
-
-snapshot.forEach(firebaseDoc=>{
-
-const item=
-normalizeFirebaseItem(
-firebaseDoc
-);
 
 FIREBASE_ITEMS.push(item);
 
 });
 
-ALL_ITEMS=[
+
+/*
+Удаляем дубликаты.
+
+Если Firebase содержит город Бохтар,
+а он уже есть в CITIES,
+не показываем его два раза.
+*/
+
+const combined=[
 ...CITIES,
 ...PLACES,
 ...FIREBASE_ITEMS
 ];
 
+
+const unique=new Map();
+
+
+combined.forEach(item=>{
+
+const key=
+(
+item.name||
+""
+)
+.trim()
+.toLowerCase();
+
+if(!key)
+return;
+
+if(!unique.has(key)){
+
+unique.set(
+key,
+item
+);
+
+}
+
+});
+
+
+ALL_ITEMS=[
+...unique.values()
+];
+
+
 status.textContent=
 "🟢 Firebase: "+
 FIREBASE_ITEMS.length+
-" объектов";
+" объектов · GitHub images";
+
 
 refreshAllViews();
+
 
 }catch(error){
 
@@ -2469,16 +2428,16 @@ error
 );
 
 status.textContent=
-"🔴 Firebase: ошибка доступа";
+t("firebaseError");
 
 }
 
 }
 
 
-/* =====================================================
+/* =========================================================
 HELPERS
-===================================================== */
+========================================================= */
 
 function findItem(id){
 
@@ -2488,17 +2447,20 @@ item=>item.id===id
 
 }
 
+
 function isFav(id){
 
 return state.favorites.includes(id);
 
 }
 
+
 function isInTrip(id){
 
 return state.trip.includes(id);
 
 }
+
 
 function catMeta(id){
 
@@ -2510,6 +2472,7 @@ CATEGORIES[0]
 );
 
 }
+
 
 function itemLocLabel(item){
 
@@ -2528,58 +2491,50 @@ item.region
 
 }
 
+
 function thumbBg(item,index){
 
 const colors=[
+
 "#E4F1EA",
 "#F3D08D",
 "#DDEDE3",
 "#F0E2C0",
 "#E9F3EC"
+
 ];
 
 return colors[index%colors.length];
 
 }
 
-function escapeHtml(value){
 
-return String(value??"")
-.replace(/&/g,"&amp;")
-.replace(/</g,"&lt;")
-.replace(/>/g,"&gt;")
-.replace(/"/g,"&quot;")
-.replace(/'/g,"&#039;");
-
-}
-
-
-/* =====================================================
-IMAGE CONTENT
-===================================================== */
+/* =========================================================
+IMAGE RENDER
+========================================================= */
 
 function thumbContent(item){
 
-const image=
-item.imageUrl||
-(
-item.imageName
-?
-GITHUB_IMAGE_BASE+
-encodeURIComponent(
-item.imageName.trim()
-)
-:
-""
-);
+const imageUrl=
+getImageUrl(item);
 
-if(image){
+
+/*
+Если есть imageName —
+создаём img.
+
+Если GitHub не найдёт файл,
+onerror прячет картинку,
+и показывается icon.
+*/
+
+if(imageUrl){
 
 return`
 
 <img
-src="${escapeHtml(image)}"
-alt="${escapeHtml(item.name)}"
+src="${escapeHtml(imageUrl)}"
+alt="${escapeHtml(item.name||"")}"
 loading="lazy"
 onerror="
 this.style.display='none';
@@ -2587,29 +2542,42 @@ this.parentElement.classList.add('image-error');
 "
 >
 
+<span class="fallback-icon">
+${escapeHtml(item.icon||"📍")}
+</span>
+
 `;
 
 }
 
-return item.icon||"📍";
+return`
+
+<span class="fallback-icon">
+${escapeHtml(item.icon||"📍")}
+</span>
+
+`;
 
 }
 
 
-/* =====================================================
+/* =========================================================
 TOAST
-===================================================== */
+========================================================= */
 
 function showToast(message){
 
 const el=
 document.getElementById("toast");
 
-el.textContent=message;
+el.textContent=
+message;
 
 el.classList.add("show");
 
-clearTimeout(showToast.timer);
+clearTimeout(
+showToast.timer
+);
 
 showToast.timer=
 setTimeout(
@@ -2622,9 +2590,9 @@ el.classList.remove("show");
 }
 
 
-/* =====================================================
+/* =========================================================
 SEARCH
-===================================================== */
+========================================================= */
 
 function matchesQuery(item,q){
 
@@ -2634,18 +2602,21 @@ return true;
 q=q.toLowerCase();
 
 return[
+
 item.name||"",
 item.region||"",
 item.city||"",
 item.description||"",
 item.category||"",
 item.type||""
+
 ]
 .join(" ")
 .toLowerCase()
 .includes(q);
 
 }
+
 
 function filterItems(){
 
@@ -2668,19 +2639,21 @@ return categoryOK&&queryOK;
 }
 
 
-/* =====================================================
+/* =========================================================
 CHIPS
-===================================================== */
+========================================================= */
 
 function renderChips(){
 
 [
 document.getElementById("catChips"),
 document.getElementById("catChips2")
+
 ]
 .forEach(row=>{
 
-if(!row)return;
+if(!row)
+return;
 
 row.innerHTML=
 CATEGORIES.map(c=>`
@@ -2691,7 +2664,8 @@ c.id===state.category
 ?"active"
 :""
 }"
-data-cat="${c.id}">
+data-cat="${c.id}"
+>
 
 <span>${c.icon}</span>
 
@@ -2702,6 +2676,7 @@ data-cat="${c.id}">
 `).join("");
 
 });
+
 
 document
 .querySelectorAll(".chip")
@@ -2731,9 +2706,9 @@ renderSearchResults();
 }
 
 
-/* =====================================================
+/* =========================================================
 CITIES
-===================================================== */
+========================================================= */
 
 function renderCitiesRail(){
 
@@ -2742,15 +2717,12 @@ document.getElementById(
 "citiesRail"
 );
 
-const firebaseCities=
-FIREBASE_ITEMS.filter(
+
+const cities=
+ALL_ITEMS.filter(
 item=>item.type==="city"
 );
 
-const cities=[
-...CITIES,
-...firebaseCities
-];
 
 if(!cities.length){
 
@@ -2761,25 +2733,27 @@ return;
 
 }
 
+
 rail.innerHTML=
 cities.map((c,i)=>`
 
 <div
 class="city-card"
-data-id="${escapeHtml(c.id)}">
+data-id="${escapeHtml(c.id)}"
+>
 
 <div
 class="thumb"
-style="background:${thumbBg(c,i)}">
+style="background:${thumbBg(c,i)}"
+>
 
 ${thumbContent(c)}
 
 <div
 class="fav-dot"
-data-fav="${escapeHtml(c.id)}">
-
+data-fav="${escapeHtml(c.id)}"
+>
 ${isFav(c.id)?"❤️":"🤍"}
-
 </div>
 
 </div>
@@ -2800,14 +2774,15 @@ ${escapeHtml(c.region||"Таджикистан")}
 
 `).join("");
 
+
 bindCardEvents(rail);
 
 }
 
 
-/* =====================================================
+/* =========================================================
 PLACES
-===================================================== */
+========================================================= */
 
 function renderPlacesGrid(){
 
@@ -2816,12 +2791,12 @@ document.getElementById(
 "placesGrid"
 );
 
-const places=[
-...PLACES,
-...FIREBASE_ITEMS.filter(
+
+const places=
+ALL_ITEMS.filter(
 item=>item.type!=="city"
-)
-];
+);
+
 
 if(!places.length){
 
@@ -2832,16 +2807,19 @@ return;
 
 }
 
+
 grid.innerHTML=
 places.map((p,i)=>`
 
 <div
 class="place-card"
-data-id="${escapeHtml(p.id)}">
+data-id="${escapeHtml(p.id)}"
+>
 
 <div
 class="thumb"
-style="background:${thumbBg(p,i)}">
+style="background:${thumbBg(p,i)}"
+>
 
 ${thumbContent(p)}
 
@@ -2887,14 +2865,15 @@ ${escapeHtml(p.price||"")}
 
 `).join("");
 
+
 bindCardEvents(grid);
 
 }
 
 
-/* =====================================================
+/* =========================================================
 ADS
-===================================================== */
+========================================================= */
 
 function renderAds(){
 
@@ -2902,13 +2881,15 @@ function renderAds(){
 "adSlot1",
 "adSlot2",
 "adSlot3"
+
 ]
 .forEach(id=>{
 
 const el=
 document.getElementById(id);
 
-if(!el)return;
+if(!el)
+return;
 
 el.innerHTML=`
 
@@ -2939,9 +2920,9 @@ SHOHIN TRAVEL SHTJK
 }
 
 
-/* =====================================================
-RESULT LIST
-===================================================== */
+/* =========================================================
+RESULTS
+========================================================= */
 
 function renderResultsList(results){
 
@@ -2971,6 +2952,7 @@ ${t("emptySearchTxt")}
 
 }
 
+
 return`
 
 <div style="padding-top:10px">
@@ -2979,11 +2961,13 @@ ${results.map((item,i)=>`
 
 <div
 class="list-row"
-data-id="${escapeHtml(item.id)}">
+data-id="${escapeHtml(item.id)}"
+>
 
 <div
 class="thumb"
-style="background:${thumbBg(item,i)}">
+style="background:${thumbBg(item,i)}"
+>
 
 ${thumbContent(item)}
 
@@ -3028,9 +3012,9 @@ itemLocLabel(item)
 }
 
 
-/* =====================================================
+/* =========================================================
 HOME FILTER
-===================================================== */
+========================================================= */
 
 function applyHomeFilterView(){
 
@@ -3041,6 +3025,7 @@ const filtering=
 q.length>0||
 state.category!=="all";
 
+
 document
 .getElementById(
 "homeDefaultSections"
@@ -3050,15 +3035,18 @@ filtering
 ?"none"
 :"block";
 
+
 const filtered=
 document.getElementById(
 "homeFilteredSections"
 );
 
+
 filtered.style.display=
 filtering
 ?"block"
 :"none";
+
 
 document
 .getElementById(
@@ -3069,6 +3057,7 @@ q
 ?"block"
 :"none";
 
+
 if(filtering){
 
 filtered.innerHTML=
@@ -3076,18 +3065,16 @@ renderResultsList(
 filterItems()
 );
 
-bindListRowEvents(
-filtered
-);
+bindListRowEvents(filtered);
 
 }
 
 }
 
 
-/* =====================================================
+/* =========================================================
 SEARCH
-===================================================== */
+========================================================= */
 
 function renderSearchResults(){
 
@@ -3106,41 +3093,38 @@ bindListRowEvents(box);
 }
 
 
-/* =====================================================
+/* =========================================================
 TRIP
-===================================================== */
+========================================================= */
 
 function renderTrip(){
 
 const list=
-document.getElementById(
-"tripList"
-);
+document.getElementById("tripList");
 
 const actions=
-document.getElementById(
-"tripActions"
-);
+document.getElementById("tripActions");
 
 const budget=
-document.getElementById(
-"budgetBox"
-);
+document.getElementById("budgetBox");
 
 const items=
 state.trip
 .map(findItem)
 .filter(Boolean);
 
+
 document
 .getElementById("tripCount")
 .textContent=
 state.trip.length;
 
+
 const badge=
 document.getElementById(
 "navTripBadge"
 );
+
 
 if(state.trip.length){
 
@@ -3155,6 +3139,7 @@ badge.style.display="none";
 
 }
 
+
 if(!items.length){
 
 budget.innerHTML="";
@@ -3163,7 +3148,9 @@ list.innerHTML=`
 
 <div class="empty-state">
 
-<div class="glyph">🧳</div>
+<div class="glyph">
+🧳
+</div>
 
 <div class="txt">
 
@@ -3185,12 +3172,15 @@ return;
 
 }
 
+
 const total=
 items.reduce(
 (sum,item)=>
-sum+(Number(item.numCost)||0),
+sum+
+(Number(item.numCost)||0),
 0
 );
+
 
 budget.innerHTML=`
 
@@ -3212,12 +3202,14 @@ ${total} сомони
 
 `;
 
+
 list.innerHTML=
 items.map((item,i)=>`
 
 <div
 class="trip-item"
-data-id="${escapeHtml(item.id)}">
+data-id="${escapeHtml(item.id)}"
+>
 
 <div class="idx">
 ${i+1}
@@ -3225,7 +3217,8 @@ ${i+1}
 
 <div
 class="thumb"
-style="background:${thumbBg(item,i)}">
+style="background:${thumbBg(item,i)}"
+>
 
 ${thumbContent(item)}
 
@@ -3245,7 +3238,8 @@ ${escapeHtml(itemLocLabel(item))}
 
 <button
 class="rm"
-data-rm-trip="${escapeHtml(item.id)}">
+data-rm-trip="${escapeHtml(item.id)}"
+>
 ✕
 </button>
 
@@ -3253,15 +3247,18 @@ data-rm-trip="${escapeHtml(item.id)}">
 
 `).join("");
 
+
 actions.innerHTML=`
 
 <button
 class="btn btn-danger-ghost btn-block"
-id="clearTripBtn">
+id="clearTripBtn"
+>
 ${t("clearTrip")}
 </button>
 
 `;
+
 
 list
 .querySelectorAll("[data-rm-trip]")
@@ -3279,6 +3276,7 @@ btn.dataset.rmTrip
 
 });
 
+
 list
 .querySelectorAll(".trip-item")
 .forEach(row=>{
@@ -3289,6 +3287,7 @@ row.dataset.id
 );
 
 });
+
 
 document
 .getElementById(
@@ -3313,9 +3312,9 @@ state.lang==="tj"
 }
 
 
-/* =====================================================
+/* =========================================================
 FAVORITES
-===================================================== */
+========================================================= */
 
 function renderFavorites(){
 
@@ -3329,10 +3328,12 @@ state.favorites
 .map(findItem)
 .filter(Boolean);
 
+
 document
 .getElementById("favCount")
 .textContent=
 state.favorites.length;
+
 
 if(!items.length){
 
@@ -3340,7 +3341,9 @@ list.innerHTML=`
 
 <div class="empty-state">
 
-<div class="glyph">❤️</div>
+<div class="glyph">
+❤️
+</div>
 
 <div class="txt">
 
@@ -3360,6 +3363,7 @@ return;
 
 }
 
+
 list.innerHTML=
 renderResultsList(items);
 
@@ -3368,9 +3372,9 @@ bindListRowEvents(list);
 }
 
 
-/* =====================================================
+/* =========================================================
 EVENTS
-===================================================== */
+========================================================= */
 
 function bindCardEvents(container){
 
@@ -3395,6 +3399,7 @@ card.dataset.id
 
 });
 
+
 container
 .querySelectorAll("[data-fav]")
 .forEach(dot=>{
@@ -3413,6 +3418,7 @@ dot.dataset.fav
 
 }
 
+
 function bindListRowEvents(container){
 
 container
@@ -3429,9 +3435,9 @@ row.dataset.id
 }
 
 
-/* =====================================================
+/* =========================================================
 FAVORITE
-===================================================== */
+========================================================= */
 
 function toggleFav(id){
 
@@ -3464,6 +3470,7 @@ state.lang==="tj"
 
 }
 
+
 saveFavorites();
 
 refreshAllViews();
@@ -3471,9 +3478,9 @@ refreshAllViews();
 }
 
 
-/* =====================================================
+/* =========================================================
 TRIP
-===================================================== */
+========================================================= */
 
 function toggleTrip(id){
 
@@ -3506,6 +3513,7 @@ state.lang==="tj"
 
 }
 
+
 saveTrip();
 
 refreshAllViews();
@@ -3513,16 +3521,18 @@ refreshAllViews();
 }
 
 
-/* =====================================================
+/* =========================================================
 DETAIL
-===================================================== */
+========================================================= */
 
 function openSheet(id){
 
 const item=
 findItem(id);
 
-if(!item)return;
+if(!item)
+return;
+
 
 const cat=
 catMeta(item.category);
@@ -3530,29 +3540,23 @@ catMeta(item.category);
 const city=
 item.type==="city";
 
-const image=
-item.imageUrl||
-(
-item.imageName
-?
-GITHUB_IMAGE_BASE+
-encodeURIComponent(
-item.imageName.trim()
-)
-:
-""
-);
 
 const mapUrl=
 "https://maps.google.com/?q="+
-item.coords.lat+
+Number(item.coords?.lat||0)+
 ","+
-item.coords.lng;
+Number(item.coords?.lng||0);
+
 
 const sheet=
 document.getElementById(
 "sheet"
 );
+
+
+const imageUrl=
+getImageUrl(item);
+
 
 sheet.innerHTML=`
 
@@ -3560,22 +3564,23 @@ sheet.innerHTML=`
 
 <div
 class="sheet-hero"
-style="background:${thumbBg(item,1)}">
+style="background:${thumbBg(item,1)}"
+>
 
 ${
-image
+imageUrl
 ?
 `
 <img
-src="${escapeHtml(image)}"
+src="${escapeHtml(imageUrl)}"
 alt="${escapeHtml(item.name)}"
 onerror="
 this.style.display='none';
-this.parentElement.innerHTML += '<div style=&quot;font-size:64px&quot;>${escapeHtml(item.icon||"📍")}</div>';
-">
+"
+>
 `
 :
-item.icon||"📍"
+escapeHtml(item.icon||"📍")
 }
 
 <div class="sheet-cat">
@@ -3588,7 +3593,8 @@ ${escapeHtml(cat.label)}
 
 <button
 class="sheet-close"
-id="sheetClose">
+id="sheetClose"
+>
 ✕
 </button>
 
@@ -3639,10 +3645,9 @@ ${t("price")}
 
 <div
 class="v"
-style="font-size:11.5px">
-
+style="font-size:11.5px"
+>
 ${escapeHtml(item.hours||"—")}
-
 </div>
 
 <div class="l">
@@ -3674,7 +3679,9 @@ ${
 
 <div class="sheet-detail-row">
 
-<div class="ic">📞</div>
+<div class="ic">
+📞
+</div>
 
 <div class="k">
 ${t("phone")}
@@ -3701,8 +3708,8 @@ ${escapeHtml(item.phone||"—")}
 
 <b>
 
-${Number(item.coords.lat||0).toFixed(4)},
-${Number(item.coords.lng||0).toFixed(4)}
+${Number(item.coords?.lat||0).toFixed(4)},
+${Number(item.coords?.lng||0).toFixed(4)}
 
 </b>
 
@@ -3712,10 +3719,9 @@ ${Number(item.coords.lng||0).toFixed(4)}
 class="map-link"
 href="${mapUrl}"
 target="_blank"
-rel="noopener">
-
+rel="noopener"
+>
 ${t("openMap")}
-
 </a>
 
 </div>
@@ -3726,12 +3732,14 @@ ${t("openMap")}
 
 <button
 class="act-btn ${isInTrip(item.id)?"on":""}"
-id="sheetTripBtn">
+id="sheetTripBtn"
+>
 
-<div class="ic">🧳</div>
+<div class="ic">
+🧳
+</div>
 
 <div>
-
 ${
 isInTrip(item.id)
 ?
@@ -3739,29 +3747,20 @@ t("inTrip")
 :
 t("addToTrip")
 }
-
 </div>
 
 </button>
 
 <button
 class="act-btn ${isFav(item.id)?"on":""}"
-id="sheetFavBtn">
+id="sheetFavBtn"
+>
 
 <div class="ic">
-
-${
-isFav(item.id)
-?
-"❤️"
-:
-"🤍"
-}
-
+${isFav(item.id)?"❤️":"🤍"}
 </div>
 
 <div>
-
 ${
 isFav(item.id)
 ?
@@ -3769,7 +3768,6 @@ t("inFav")
 :
 t("addFav")
 }
-
 </div>
 
 </button>
@@ -3777,6 +3775,7 @@ t("addFav")
 </div>
 
 `;
+
 
 document
 .getElementById("sheetClose")
@@ -3789,6 +3788,7 @@ document
 
 };
 
+
 document
 .getElementById("sheetTripBtn")
 .onclick=()=>{
@@ -3798,6 +3798,7 @@ toggleTrip(item.id);
 openSheet(item.id);
 
 };
+
 
 document
 .getElementById("sheetFavBtn")
@@ -3809,6 +3810,7 @@ openSheet(item.id);
 
 };
 
+
 document
 .getElementById("overlay")
 .classList
@@ -3817,13 +3819,15 @@ document
 }
 
 
-/* =====================================================
+/* =========================================================
 TABS
-===================================================== */
+========================================================= */
 
 function setTab(tab){
 
-state.tab=tab;
+state.tab=
+tab;
+
 
 document
 .querySelectorAll(".view")
@@ -3831,16 +3835,19 @@ document
 v.classList.remove("active")
 );
 
+
 const target=
 document.getElementById(
 "view-"+tab
 );
+
 
 if(target){
 
 target.classList.add("active");
 
 }
+
 
 document
 .querySelectorAll(".nav-btn")
@@ -3852,6 +3859,7 @@ btn.dataset.tab===tab
 )
 
 );
+
 
 if(tab==="search")
 renderSearchResults();
@@ -3867,14 +3875,15 @@ window.scrollTo(0,0);
 }
 
 
-/* =====================================================
+/* =========================================================
 LANGUAGE
-===================================================== */
+========================================================= */
 
 function applyLanguage(){
 
 document.documentElement.lang=
 state.lang;
+
 
 document
 .querySelectorAll("[data-i18n]")
@@ -3885,6 +3894,7 @@ t(el.dataset.i18n);
 
 });
 
+
 document
 .querySelectorAll("[data-i18n-ph]")
 .forEach(el=>{
@@ -3893,6 +3903,7 @@ el.placeholder=
 t(el.dataset.i18nPh);
 
 });
+
 
 document
 .querySelectorAll(".lang-btn")
@@ -3908,9 +3919,9 @@ btn.dataset.lang===state.lang
 }
 
 
-/* =====================================================
-STORAGE LOCAL
-===================================================== */
+/* =========================================================
+STORAGE
+========================================================= */
 
 function saveFavorites(){
 
@@ -3922,6 +3933,7 @@ state.favorites
 );
 
 }
+
 
 function saveTrip(){
 
@@ -3935,9 +3947,9 @@ state.trip
 }
 
 
-/* =====================================================
+/* =========================================================
 REFRESH
-===================================================== */
+========================================================= */
 
 function refreshAllViews(){
 
@@ -3948,8 +3960,6 @@ renderPlacesGrid();
 renderAds();
 
 renderChips();
-
-applyLanguage();
 
 if(state.tab==="home"){
 
@@ -3975,10 +3985,12 @@ renderFavorites();
 
 }
 
+
 document
 .getElementById("favCount")
 .textContent=
 state.favorites.length;
+
 
 document
 .getElementById("tripCount")
@@ -3988,11 +4000,12 @@ state.trip.length;
 }
 
 
-/* =====================================================
+/* =========================================================
 GLOBAL EVENTS
-===================================================== */
+========================================================= */
 
 function bindGlobalEvents(){
+
 
 document
 .querySelectorAll("[data-nav]")
@@ -4017,6 +4030,7 @@ el.dataset.nav
 
 });
 
+
 document
 .querySelectorAll(".nav-btn")
 .forEach(btn=>{
@@ -4028,10 +4042,12 @@ btn.dataset.tab
 
 });
 
+
 const homeSearch=
 document.getElementById(
 "homeSearch"
 );
+
 
 homeSearch.oninput=e=>{
 
@@ -4041,6 +4057,7 @@ e.target.value;
 applyHomeFilterView();
 
 };
+
 
 document
 .getElementById(
@@ -4056,10 +4073,12 @@ applyHomeFilterView();
 
 };
 
+
 const fullSearch=
 document.getElementById(
 "fullSearch"
 );
+
 
 fullSearch.oninput=e=>{
 
@@ -4081,6 +4100,7 @@ renderSearchResults();
 
 };
 
+
 document
 .getElementById(
 "fullSearchClear"
@@ -4101,6 +4121,7 @@ document
 
 };
 
+
 document
 .getElementById(
 "overlay"
@@ -4119,6 +4140,7 @@ document
 }
 
 };
+
 
 document
 .querySelectorAll(".lang-btn")
@@ -4145,9 +4167,9 @@ refreshAllViews();
 }
 
 
-/* =====================================================
+/* =========================================================
 START
-===================================================== */
+========================================================= */
 
 async function init(){
 
