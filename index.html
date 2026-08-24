@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-
 <meta charset="UTF-8">
 
-<meta
-name="viewport"
-content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
->
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-<meta
-name="theme-color"
-content="#123C2C"
->
+<meta name="theme-color" content="#123C2C">
 
-<meta
-name="description"
-content="SHOHIN TRAVEL SHTJK — путеводитель по Таджикистану"
->
+<meta name="description"
+content="SHOHIN TRAVEL SHTJK — путеводитель по Таджикистану">
 
 <title>SHOHIN TRAVEL SHTJK</title>
 
@@ -148,7 +140,6 @@ font-weight:600;
 color:var(--pine-600)
 }
 
-
 /* HEADER */
 
 .header{
@@ -159,15 +150,10 @@ var(--pine-800) 0%,
 var(--pine-700) 62%,
 var(--pine-600) 100%
 );
-
 color:var(--cream);
-
 padding:18px 18px 34px;
-
 position:relative;
-
 overflow:hidden;
-
 border-radius:0 0 28px 28px
 }
 
@@ -190,24 +176,18 @@ gap:9px
 width:36px;
 height:36px;
 border-radius:11px;
-
-background:
-linear-gradient(
+background:linear-gradient(
 145deg,
 var(--gold-500),
 var(--gold-600)
 );
-
 display:flex;
 align-items:center;
 justify-content:center;
-
 font-family:var(--font-display);
 font-weight:700;
 font-size:17px;
-
 color:var(--pine-800);
-
 box-shadow:var(--shadow-sm)
 }
 
@@ -234,11 +214,9 @@ width:38px;
 height:38px;
 border-radius:50%;
 background:rgba(255,255,255,.12);
-
 display:flex;
 align-items:center;
 justify-content:center;
-
 font-size:17px;
 color:var(--cream)
 }
@@ -248,12 +226,9 @@ font-family:var(--font-display);
 font-size:25px;
 line-height:1.28;
 font-weight:700;
-
 position:relative;
 z-index:2;
-
 max-width:290px;
-
 margin-bottom:16px
 }
 
@@ -267,22 +242,16 @@ z-index:1;
 opacity:.9
 }
 
-
 /* SEARCH */
 
 .search-bar{
 display:flex;
 align-items:center;
 gap:10px;
-
 background:#fff;
-
 border-radius:16px;
-
 padding:13px 15px;
-
 box-shadow:var(--shadow-md);
-
 position:relative;
 z-index:2
 }
@@ -290,9 +259,7 @@ z-index:2
 .search-bar input{
 border:0;
 flex:1;
-
 font-size:14.5px;
-
 color:var(--ink);
 background:transparent
 }
@@ -312,40 +279,28 @@ color:var(--ink-soft);
 display:none
 }
 
-
 /* CHIPS */
 
 .chip-row{
 display:flex;
 gap:9px;
-
 overflow-x:auto;
-
 padding:12px 18px 6px;
-
 scroll-snap-type:x proximity
 }
 
 .chip{
 flex:0 0 auto;
-
 display:flex;
 align-items:center;
 gap:6px;
-
 padding:9px 15px;
-
 border-radius:999px;
-
 background:#fff;
-
 border:1px solid var(--line);
-
 font-size:13px;
 font-weight:600;
-
 color:var(--ink-soft);
-
 white-space:nowrap
 }
 
@@ -355,7 +310,6 @@ border-color:var(--pine-700);
 color:#fff;
 box-shadow:var(--shadow-sm)
 }
-
 
 /* LOADING */
 
@@ -369,14 +323,10 @@ font-size:13px
 .spinner{
 width:28px;
 height:28px;
-
 margin:0 auto 10px;
-
 border:3px solid var(--line);
 border-top-color:var(--pine-700);
-
 border-radius:50%;
-
 animation:spin .7s linear infinite
 }
 
@@ -386,45 +336,32 @@ transform:rotate(360deg)
 }
 }
 
-
 /* RAIL */
 
 .rail{
 display:flex;
 gap:13px;
-
 overflow-x:auto;
-
 padding:2px 18px 10px
 }
 
 .city-card{
 flex:0 0 auto;
-
 width:146px;
-
 background:#fff;
-
 border-radius:var(--radius-md);
-
 box-shadow:var(--shadow-sm);
-
 overflow:hidden;
-
 border:1px solid var(--line)
 }
 
 .city-card .thumb{
 height:96px;
-
 display:flex;
 align-items:center;
 justify-content:center;
-
 font-size:34px;
-
 position:relative;
-
 overflow:hidden
 }
 
@@ -436,21 +373,15 @@ object-fit:cover
 
 .city-card .fav-dot{
 position:absolute;
-
 top:8px;
 right:8px;
-
 width:26px;
 height:26px;
-
 border-radius:50%;
-
 background:rgba(255,255,255,.88);
-
 display:flex;
 align-items:center;
 justify-content:center;
-
 font-size:13px
 }
 
@@ -469,42 +400,30 @@ font-size:11px;
 color:var(--ink-soft)
 }
 
-
 /* GRID */
 
 .grid{
 display:grid;
-
 grid-template-columns:1fr 1fr;
-
 gap:12px;
-
 padding:2px 18px 6px
 }
 
 .place-card{
 background:#fff;
-
 border-radius:var(--radius-md);
-
 overflow:hidden;
-
 box-shadow:var(--shadow-sm);
-
 border:1px solid var(--line)
 }
 
 .place-card .thumb{
 height:100px;
-
 display:flex;
 align-items:center;
 justify-content:center;
-
 font-size:30px;
-
 position:relative;
-
 overflow:hidden
 }
 
@@ -516,24 +435,15 @@ object-fit:cover
 
 .place-card .cat-tag{
 position:absolute;
-
 left:8px;
 top:8px;
-
 background:rgba(11,42,32,.62);
-
 color:#fff;
-
 font-size:9.5px;
-
 font-weight:700;
-
 letter-spacing:.04em;
-
 text-transform:uppercase;
-
 padding:3px 7px;
-
 border-radius:999px
 }
 
@@ -562,14 +472,10 @@ justify-content:space-between
 
 .rating{
 font-size:11.5px;
-
 font-weight:700;
-
 color:var(--gold-600);
-
 display:flex;
 align-items:center;
-
 gap:3px
 }
 
@@ -579,41 +485,28 @@ font-weight:600;
 color:var(--pine-700)
 }
 
-
 /* LIST */
 
 .list-row{
 display:flex;
-
 gap:12px;
-
 background:#fff;
-
 border-radius:var(--radius-md);
-
 border:1px solid var(--line);
-
 box-shadow:var(--shadow-sm);
-
 padding:10px;
-
 margin:0 18px 12px
 }
 
 .list-row .thumb{
 width:64px;
 height:64px;
-
 border-radius:12px;
-
 flex:0 0 auto;
-
 display:flex;
 align-items:center;
 justify-content:center;
-
 font-size:26px;
-
 overflow:hidden
 }
 
@@ -640,7 +533,6 @@ color:var(--ink-soft);
 margin-bottom:5px
 }
 
-
 /* EMPTY */
 
 .empty-state{
@@ -659,62 +551,44 @@ font-size:13.5px;
 line-height:1.5
 }
 
-
 /* FIREBASE STATUS */
 
 .firebase-status{
 margin:8px 18px 0;
-
 padding:9px 12px;
-
 border-radius:10px;
-
 font-size:11px;
-
 background:var(--pine-100);
-
 color:var(--pine-700)
 }
-
 
 /* ADS */
 
 .ad-slot{
 margin:2px 18px 16px;
-
 border-radius:var(--radius-md);
-
 border:1.5px dashed var(--gold-500);
-
 background:
 linear-gradient(
 135deg,
 var(--gold-300),
 var(--cream-2) 130%
 );
-
 padding:13px 14px;
-
 display:flex;
 align-items:center;
-
 gap:12px
 }
 
 .ad-slot .ad-icon{
 width:44px;
 height:44px;
-
 border-radius:12px;
-
 background:#fff;
-
 display:flex;
 align-items:center;
 justify-content:center;
-
 font-size:20px;
-
 flex:0 0 auto
 }
 
@@ -725,13 +599,9 @@ min-width:0
 
 .ad-slot .ad-label{
 font-size:9.5px;
-
 font-weight:700;
-
 letter-spacing:.1em;
-
 text-transform:uppercase;
-
 color:var(--gold-600)
 }
 
@@ -747,55 +617,36 @@ color:var(--ink-soft);
 margin-top:1px
 }
 
-
 /* NAV */
 
 .bottom-nav{
 position:fixed;
-
 left:0;
 right:0;
 bottom:0;
-
 max-width:480px;
-
 margin:auto;
-
 background:rgba(251,248,242,.96);
-
 backdrop-filter:blur(6px);
-
 border-top:1px solid var(--line);
-
 display:flex;
-
 padding:
 8px
 6px
 calc(8px + env(safe-area-inset-bottom));
-
 z-index:40
 }
 
 .nav-btn{
 flex:1;
-
 display:flex;
-
 flex-direction:column;
-
 align-items:center;
-
 gap:3px;
-
 padding:6px 2px;
-
 color:var(--ink-soft);
-
 font-size:10.5px;
-
 font-weight:600;
-
 position:relative
 }
 
@@ -809,48 +660,33 @@ color:var(--pine-700)
 
 .nav-badge{
 position:absolute;
-
 top:0;
 right:22%;
-
 min-width:15px;
 height:15px;
-
 border-radius:999px;
-
 background:var(--danger);
-
 color:#fff;
-
 font-size:9px;
-
 font-weight:700;
-
 display:flex;
-
 align-items:center;
 justify-content:center;
-
 padding:0 3px
 }
-
 
 /* PAGE */
 
 .page-head{
 padding:18px 18px 6px;
-
 display:flex;
 align-items:center;
-
 gap:12px
 }
 
 .page-head .title{
 font-family:var(--font-display);
-
 font-size:19px;
-
 font-weight:700
 }
 
@@ -858,85 +694,60 @@ font-weight:700
 margin:10px 18px 4px
 }
 
-
 /* PROFILE */
 
 .profile-hero{
 padding:22px 18px 6px;
-
 display:flex;
-
 align-items:center;
-
 gap:13px
 }
 
 .avatar{
 width:56px;
 height:56px;
-
 border-radius:50%;
-
 background:
 linear-gradient(
 145deg,
 var(--gold-500),
 var(--gold-600)
 );
-
 display:flex;
-
 align-items:center;
 justify-content:center;
-
 font-size:24px;
-
 color:var(--pine-800)
 }
 
 .profile-name{
 font-family:var(--font-display);
-
 font-weight:700;
-
 font-size:17px
 }
 
 .profile-sub{
 font-size:12px;
-
 color:var(--ink-soft);
-
 margin-top:2px
 }
 
 .menu-list{
 margin:14px 18px;
-
 background:#fff;
-
 border-radius:var(--radius-md);
-
 border:1px solid var(--line);
-
 overflow:hidden;
-
 box-shadow:var(--shadow-sm)
 }
 
 .menu-item{
 width:100%;
-
 display:flex;
-
 align-items:center;
-
 gap:12px;
-
 padding:14px 15px;
-
 border-bottom:1px solid var(--line);
-
 text-align:left
 }
 
@@ -947,131 +758,89 @@ border-bottom:0
 .menu-item .ic{
 width:34px;
 height:34px;
-
 border-radius:10px;
-
 background:var(--pine-100);
-
 display:flex;
-
 align-items:center;
 justify-content:center;
-
 font-size:16px
 }
 
 .menu-item .label{
 flex:1;
-
 font-size:14px;
-
 font-weight:600
 }
 
 .menu-item .val{
 font-size:12.5px;
-
 color:var(--ink-soft)
 }
 
 .menu-item .chev{
 color:var(--ink-soft);
-
 font-size:14px
 }
 
 .lang-row{
 display:flex;
-
 gap:10px;
-
 margin:10px 18px 4px
 }
 
 .lang-btn{
 flex:1;
-
 padding:11px 6px;
-
 border-radius:12px;
-
 border:1.5px solid var(--line);
-
 background:#fff;
-
 font-size:12.5px;
-
 font-weight:700
 }
 
 .lang-btn.active{
 border-color:var(--pine-700);
-
 background:var(--pine-700);
-
 color:#fff
 }
-
 
 /* TRIP */
 
 .trip-item{
 display:flex;
-
 align-items:center;
-
 gap:12px;
-
 background:#fff;
-
 border:1px solid var(--line);
-
 border-radius:var(--radius-md);
-
 padding:11px;
-
 margin:0 18px 10px;
-
 box-shadow:var(--shadow-sm)
 }
 
 .trip-item .idx{
 width:24px;
 height:24px;
-
 border-radius:50%;
-
 background:var(--pine-100);
-
 color:var(--pine-700);
-
 font-size:12px;
-
 font-weight:700;
-
 display:flex;
-
 align-items:center;
 justify-content:center;
-
 flex:0 0 auto
 }
 
 .trip-item .thumb{
 width:48px;
 height:48px;
-
 border-radius:10px;
-
 display:flex;
-
 align-items:center;
 justify-content:center;
-
 font-size:20px;
-
 flex:0 0 auto;
-
 overflow:hidden
 }
 
@@ -1088,103 +857,73 @@ min-width:0
 
 .trip-item .name{
 font-weight:700;
-
 font-size:13.5px
 }
 
 .trip-item .loc{
 font-size:11px;
-
 color:var(--ink-soft)
 }
 
 .trip-item .rm{
 font-size:18px;
-
 color:var(--ink-soft);
-
 padding:4px 6px
 }
 
 .budget-card{
 margin:0 18px 14px;
-
 background:#fff;
-
 border:1px solid var(--line);
-
 border-radius:var(--radius-md);
-
 padding:14px;
-
 box-shadow:var(--shadow-sm)
 }
 
 .budget-row{
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 font-size:14px
 }
 
 .budget-row .sum{
 font-weight:700;
-
 color:var(--pine-700);
-
 font-size:16px
 }
 
 .btn{
 display:inline-flex;
-
 align-items:center;
 justify-content:center;
-
 gap:7px;
-
 padding:13px 18px;
-
 border-radius:14px;
-
 font-weight:700;
-
 font-size:14px
 }
 
 .btn-block{
 width:calc(100% - 36px);
-
 margin:6px 18px 18px
 }
 
 .btn-danger-ghost{
 color:var(--danger);
-
 border:1.5px solid var(--danger);
-
 background:#fff
 }
-
 
 /* SHEET */
 
 .overlay{
 position:fixed;
-
 inset:0;
-
 background:rgba(11,42,32,.45);
-
 display:none;
-
 align-items:flex-end;
-
 justify-content:center;
-
 z-index:100
 }
 
@@ -1194,63 +933,43 @@ display:flex
 
 .sheet{
 width:100%;
-
 max-width:480px;
-
 max-height:88vh;
-
 overflow-y:auto;
-
 background:var(--cream);
-
 border-radius:24px 24px 0 0;
-
 animation:slideUp .22s ease-out;
-
 padding-bottom:26px
 }
 
 @keyframes slideUp{
-
 from{
 transform:translateY(24px);
 opacity:.4
 }
-
 to{
 transform:translateY(0);
 opacity:1
 }
-
 }
 
 .sheet-grabber{
 width:38px;
 height:4px;
-
 background:var(--line);
-
 border-radius:99px;
-
 margin:10px auto 0
 }
 
 .sheet-hero{
 height:180px;
-
 margin:14px 18px 0;
-
 border-radius:18px;
-
 display:flex;
-
 align-items:center;
 justify-content:center;
-
 font-size:64px;
-
 position:relative;
-
 overflow:hidden
 }
 
@@ -1262,43 +981,28 @@ object-fit:cover
 
 .sheet-close{
 position:absolute;
-
 top:10px;
 right:10px;
-
 width:32px;
 height:32px;
-
 border-radius:50%;
-
 background:rgba(255,255,255,.85);
-
 display:flex;
-
 align-items:center;
 justify-content:center
 }
 
 .sheet-cat{
 position:absolute;
-
 left:12px;
 top:12px;
-
 background:rgba(11,42,32,.6);
-
 color:#fff;
-
 font-size:10px;
-
 font-weight:700;
-
 text-transform:uppercase;
-
 letter-spacing:.05em;
-
 padding:4px 9px;
-
 border-radius:999px
 }
 
@@ -1308,175 +1012,118 @@ padding:16px 18px 0
 
 .sheet-title{
 font-family:var(--font-display);
-
 font-size:22px;
-
 font-weight:700;
-
 margin-bottom:4px
 }
 
 .sheet-loc{
 font-size:13px;
-
 color:var(--ink-soft);
-
 margin-bottom:12px
 }
 
 .sheet-stats{
 display:flex;
-
 gap:8px;
-
 margin-bottom:14px
 }
 
 .stat-pill{
 flex:1;
-
 background:#fff;
-
 border:1px solid var(--line);
-
 border-radius:12px;
-
 padding:9px 8px;
-
 text-align:center
 }
 
 .stat-pill .v{
 font-weight:700;
-
 font-size:13.5px
 }
 
 .stat-pill .l{
 font-size:9.5px;
-
 color:var(--ink-soft);
-
 text-transform:uppercase;
-
 letter-spacing:.05em;
-
 margin-top:1px
 }
 
 .sheet-desc{
 font-size:13.5px;
-
 line-height:1.65;
-
 margin-bottom:14px
 }
 
 .sheet-detail-row{
 display:flex;
-
 gap:10px;
-
 padding:10px 0;
-
 border-top:1px solid var(--line);
-
 font-size:13px
 }
 
 .sheet-detail-row .ic{
 width:20px;
-
 flex:0 0 auto
 }
 
 .sheet-detail-row .k{
 color:var(--ink-soft);
-
 width:82px;
-
 flex:0 0 auto
 }
 
 .sheet-map-box{
 margin-top:6px;
-
 background:var(--pine-100);
-
 border-radius:14px;
-
 padding:14px;
-
 font-size:12px;
-
 color:var(--pine-700);
-
 line-height:1.55;
-
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 gap:10px
 }
 
 .map-link{
 background:var(--pine-700);
-
 color:#fff;
-
 padding:6px 12px;
-
 border-radius:8px;
-
 font-weight:700;
-
 font-size:11px;
-
 white-space:nowrap
 }
 
 .sheet-actions{
 display:flex;
-
 gap:9px;
-
 padding:16px 18px 0
 }
 
 .act-btn{
 flex:1;
-
 display:flex;
-
 flex-direction:column;
-
 align-items:center;
-
 gap:4px;
-
 padding:11px 4px;
-
 border-radius:14px;
-
 border:1.5px solid var(--line);
-
 background:#fff;
-
 font-size:10.5px;
-
 font-weight:700;
-
 color:var(--ink-soft)
 }
 
 .act-btn.on{
 border-color:var(--gold-600);
-
 background:var(--gold-300);
-
 color:var(--gold-600)
 }
 
@@ -1484,50 +1131,32 @@ color:var(--gold-600)
 font-size:18px
 }
 
-
 /* TOAST */
 
 .toast{
 position:fixed;
-
 left:50%;
-
 bottom:96px;
-
 transform:
 translateX(-50%)
 translateY(20px);
-
 background:var(--pine-800);
-
 color:#fff;
-
 font-size:12.5px;
-
 font-weight:600;
-
 padding:10px 18px;
-
 border-radius:999px;
-
 opacity:0;
-
 pointer-events:none;
-
 transition:.22s ease;
-
 z-index:200;
-
 max-width:80%;
-
 text-align:center;
-
 box-shadow:var(--shadow-lg)
 }
 
 .toast.show{
 opacity:1;
-
 transform:
 translateX(-50%)
 translateY(0)
@@ -1540,10 +1169,7 @@ translateY(0)
 
 <div id="app">
 
-
-<!-- =========================
-HOME
-========================= -->
+<!-- HOME -->
 
 <div class="view active" id="view-home">
 
@@ -1571,85 +1197,67 @@ SHTJK 🇹🇯
 
 <button
 class="header-icon-btn"
-data-nav="profile"
->
+data-nav="profile">
 👤
 </button>
 
 </div>
 
-
 <div
 class="header-title"
-data-i18n="homeTitle"
->
+data-i18n="homeTitle">
 Путешествуй по Таджикистану 🇹🇯
 </div>
 
-
 <div class="search-bar">
 
-<span class="search-icon">
-🔍
-</span>
+<span class="search-icon">🔍</span>
 
 <input
 id="homeSearch"
 type="text"
 data-i18n-ph="searchPh"
-placeholder="Город, место, категория…"
->
+placeholder="Город, место, категория…">
 
 <span
 class="search-clear"
-id="homeSearchClear"
->
+id="homeSearchClear">
 ✕
 </span>
 
 </div>
 
-
 <svg
 class="ridge"
 viewBox="0 0 480 64"
-preserveAspectRatio="none"
->
+preserveAspectRatio="none">
 
 <polygon
 points="0,64 0,40 60,18 120,36 180,10 250,32 320,14 390,38 440,22 480,40 480,64"
 fill="#1E6A48"
-opacity=".55"
-/>
+opacity=".55"/>
 
 <polygon
 points="0,64 0,50 70,30 140,46 210,26 280,44 350,28 420,48 480,32 480,64"
 fill="#175038"
-opacity=".75"
-/>
+opacity=".75"/>
 
 </svg>
 
 </div>
 
-
 <div
 class="firebase-status"
-id="firebaseStatus"
->
+id="firebaseStatus">
 🔄 Подключение к базе...
 </div>
 
-
 <div
 class="chip-row"
-id="catChips"
->
+id="catChips">
 </div>
 
-
 <div id="homeDefaultSections">
-
 
 <div class="section">
 
@@ -1657,8 +1265,7 @@ id="catChips"
 
 <div
 class="section-title"
-data-i18n="popularCities"
->
+data-i18n="popularCities">
 Популярные города
 </div>
 
@@ -1666,8 +1273,7 @@ data-i18n="popularCities"
 class="section-link"
 data-nav="search"
 data-cat="city"
-data-i18n="seeAll"
->
+data-i18n="seeAll">
 Все →
 </button>
 
@@ -1675,20 +1281,15 @@ data-i18n="seeAll"
 
 </div>
 
-
 <div
 class="rail"
-id="citiesRail"
->
+id="citiesRail">
 </div>
-
 
 <div
 class="ad-slot"
-id="adSlot1"
->
+id="adSlot1">
 </div>
-
 
 <div class="section">
 
@@ -1696,16 +1297,14 @@ id="adSlot1"
 
 <div
 class="section-title"
-data-i18n="interestingPlaces"
->
+data-i18n="interestingPlaces">
 Интересные места
 </div>
 
 <button
 class="section-link"
 data-nav="search"
-data-i18n="seeAll"
->
+data-i18n="seeAll">
 Все →
 </button>
 
@@ -1713,72 +1312,56 @@ data-i18n="seeAll"
 
 </div>
 
-
 <div
 class="grid"
-id="placesGrid"
->
+id="placesGrid">
 </div>
-
 
 <div
 class="ad-slot"
-id="adSlot2"
->
+id="adSlot2">
 </div>
 
 </div>
-
 
 <div
 id="homeFilteredSections"
-style="display:none"
->
+style="display:none">
 </div>
 
 </div>
 
-
-<!-- =========================
-SEARCH
-========================= -->
+<!-- SEARCH -->
 
 <div
 class="view"
-id="view-search"
->
+id="view-search">
 
 <div class="page-head">
 
 <div
 class="title"
-data-i18n="searchTitle"
->
+data-i18n="searchTitle">
 Поиск и категории
 </div>
 
 </div>
 
-
 <div class="search-full">
 
 <div class="search-bar">
 
-<span class="search-icon">
-🔍
-</span>
+<span class="search-icon">🔍</span>
 
 <input
 id="fullSearch"
 type="text"
 data-i18n-ph="searchPh"
-placeholder="Город, место, категория…"
->
+placeholder="Город, место, категория…">
 
 <span
 class="search-clear"
-id="fullSearchClear"
->
+id="fullSearchClear">
 ✕
 </span>
 
@@ -1786,60 +1369,45 @@ id="fullSearchClear"
 
 </div>
 
-
 <div
 class="chip-row"
-id="catChips2"
->
+id="catChips2">
 </div>
-
 
 <div id="searchResults">
 </div>
 
 </div>
 
-
-<!-- =========================
-TRIP
-========================= -->
+<!-- TRIP -->
 
 <div
 class="view"
-id="view-trip"
->
+id="view-trip">
 
 <div class="page-head">
 
 <div
 class="title"
-data-i18n="myTripTitle"
->
+data-i18n="myTripTitle">
 🧳 Моя поездка
 </div>
 
 </div>
 
-<div id="budgetBox">
-</div>
+<div id="budgetBox"></div>
 
-<div id="tripList">
-</div>
+<div id="tripList"></div>
 
-<div id="tripActions">
-</div>
+<div id="tripActions"></div>
 
 </div>
 
-
-<!-- =========================
-PROFILE
-========================= -->
+<!-- PROFILE -->
 
 <div
 class="view"
-id="view-profile"
->
+id="view-profile">
 
 <div class="profile-hero">
 
@@ -1851,15 +1419,13 @@ id="view-profile"
 
 <div
 class="profile-name"
-data-i18n="guestName"
->
+data-i18n="guestName">
 Гость
 </div>
 
 <div
 class="profile-sub"
-data-i18n="noRegister"
->
+data-i18n="noRegister">
 Без регистрации · офлайн-режим
 </div>
 
@@ -1867,189 +1433,141 @@ data-i18n="noRegister"
 
 </div>
 
-
 <div class="menu-list">
 
 <button
 class="menu-item"
-data-nav="favorites"
->
+data-nav="favorites">
 
-<div class="ic">
-❤️
-</div>
+<div class="ic">❤️</div>
 
 <div
 class="label"
-data-i18n="favorites"
->
+data-i18n="favorites">
 Избранное
 </div>
 
 <div
 class="val"
-id="favCount"
->
+id="favCount">
 0
 </div>
 
-<div class="chev">
-›
-</div>
+<div class="chev">›</div>
 
 </button>
 
-
 <button
 class="menu-item"
-data-nav="trip"
->
+data-nav="trip">
 
-<div class="ic">
-🧳
-</div>
+<div class="ic">🧳</div>
 
 <div
 class="label"
-data-i18n="myTrip"
->
+data-i18n="myTrip">
 Моя поездка
 </div>
 
 <div
 class="val"
-id="tripCount"
->
+id="tripCount">
 0
 </div>
 
-<div class="chev">
-›
-</div>
+<div class="chev">›</div>
 
 </button>
 
 </div>
 
-
 <div
 class="section"
-style="padding-top:6px"
->
+style="padding-top:6px">
 
 <div
 class="section-title"
 style="font-size:14px"
-data-i18n="language"
->
+data-i18n="language">
 Язык
 </div>
 
 </div>
 
-
 <div class="lang-row">
 
-<button
-class="lang-btn"
-data-lang="ru"
->
+<button class="lang-btn" data-lang="ru">
 🇷🇺 Русский
 </button>
 
-<button
-class="lang-btn"
-data-lang="tj"
->
+<button class="lang-btn" data-lang="tj">
 🇹🇯 Тоҷикӣ
 </button>
 
-<button
-class="lang-btn"
-data-lang="en"
->
+<button class="lang-btn" data-lang="en">
 🇬🇧 English
 </button>
 
 </div>
 
-
 <div
 class="menu-list"
-style="margin-top:18px"
->
+style="margin-top:18px">
 
 <div class="menu-item">
 
-<div class="ic">
-ℹ️
-</div>
+<div class="ic">ℹ️</div>
 
 <div
 class="label"
-data-i18n="aboutApp"
->
+data-i18n="aboutApp">
 О приложении
 </div>
 
 <div class="val">
-v2.0 Firebase
+v3.0
 </div>
 
 </div>
 
 </div>
-
 
 <div
 class="ad-slot"
-id="adSlot3"
->
+id="adSlot3">
 </div>
 
 </div>
 
-
-<!-- =========================
-FAVORITES
-========================= -->
+<!-- FAVORITES -->
 
 <div
 class="view"
-id="view-favorites"
->
+id="view-favorites">
 
 <div class="page-head">
 
 <div
 class="title"
-data-i18n="favoritesTitle"
->
+data-i18n="favoritesTitle">
 ❤️ Избранное
 </div>
 
 </div>
 
-<div id="favList">
-</div>
+<div id="favList"></div>
 
 </div>
 
-
-<!-- =========================
-NAV
-========================= -->
+<!-- NAV -->
 
 <div class="bottom-nav">
 
 <button
 class="nav-btn active"
-data-tab="home"
->
+data-tab="home">
 
-<div class="ic">
-🏠
-</div>
+<div class="ic">🏠</div>
 
 <div data-i18n="navHome">
 Главная
@@ -2057,15 +1575,11 @@ data-tab="home"
 
 </button>
 
-
 <button
 class="nav-btn"
-data-tab="search"
->
+data-tab="search">
 
-<div class="ic">
-🔍
-</div>
+<div class="ic">🔍</div>
 
 <div data-i18n="navSearch">
 Поиск
@@ -2073,15 +1587,11 @@ data-tab="search"
 
 </button>
 
-
 <button
 class="nav-btn"
-data-tab="trip"
->
+data-tab="trip">
 
-<div class="ic">
-🧳
-</div>
+<div class="ic">🧳</div>
 
 <div data-i18n="navTrip">
 Поездка
@@ -2090,22 +1600,17 @@ data-tab="trip"
 <div
 class="nav-badge"
 id="navTripBadge"
-style="display:none"
->
+style="display:none">
 0
 </div>
 
 </button>
 
-
 <button
 class="nav-btn"
-data-tab="profile"
->
+data-tab="profile">
 
-<div class="ic">
-👤
-</div>
+<div class="ic">👤</div>
 
 <div data-i18n="navProfile">
 Профиль
@@ -2117,33 +1622,24 @@ data-tab="profile"
 
 </div>
 
-
 <!-- DETAIL -->
 
 <div
 class="overlay"
-id="overlay"
->
+id="overlay">
 
 <div
 class="sheet"
-id="sheet"
->
+id="sheet">
 </div>
 
 </div>
-
 
 <div
 class="toast"
-id="toast"
->
+id="toast">
 </div>
 
-
-<!-- =====================================================
-FIREBASE + APPLICATION
-===================================================== -->
 
 <script type="module">
 
@@ -2152,7 +1648,6 @@ initializeApp
 }
 from
 "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
-
 
 import {
 getFirestore,
@@ -2164,7 +1659,7 @@ from
 
 
 /* =====================================================
-FIREBASE CONFIG
+FIREBASE
 ===================================================== */
 
 const firebaseConfig={
@@ -2192,16 +1687,98 @@ measurementId:
 
 };
 
-
-/* =====================================================
-FIREBASE INIT
-===================================================== */
-
 const firebaseApp=
 initializeApp(firebaseConfig);
 
 const db=
 getFirestore(firebaseApp);
+
+
+/* =====================================================
+GITHUB IMAGES
+===================================================== */
+
+/*
+   ВАЖНО:
+
+   Репозиторий:
+   SHOHIN-TRAVEL
+
+   Папка:
+   images
+
+   Например:
+   images/bokhtar.jpg
+
+   GitHub Pages:
+   https://shohintajikistan.github.io/SHOHIN-TRAVEL/images/bokhtar.jpg
+*/
+
+const GITHUB_IMAGE_BASE=
+"https://shohintajikistan.github.io/SHOHIN-TRAVEL/images/";
+
+
+/* =====================================================
+IMAGE URL BUILDER
+===================================================== */
+
+function getImageUrl(data){
+
+/*
+   1. Если imageUrl уже указан —
+      используем его.
+*/
+
+if(data.imageUrl){
+
+return data.imageUrl;
+
+}
+
+
+/*
+   2. Если указано image —
+      тоже поддерживаем.
+*/
+
+if(data.image){
+
+return data.image;
+
+}
+
+
+/*
+   3. Новый способ:
+      imageName = bokhtar.jpg
+
+      автоматически:
+      images/bokhtar.jpg
+*/
+
+if(data.imageName){
+
+const fileName=
+String(data.imageName).trim();
+
+if(fileName){
+
+return GITHUB_IMAGE_BASE+
+encodeURIComponent(fileName);
+
+}
+
+}
+
+
+/*
+   4. Если ничего нет —
+      пусто.
+*/
+
+return "";
+
+}
 
 
 /* =====================================================
@@ -2262,18 +1839,16 @@ name:"Душанбе",
 region:"г. Душанбе",
 country:"tj",
 category:"city",
-
 description:
 "Столица Таджикистана — зелёный город с широкими проспектами и парками.",
-
 coords:{
 lat:38.5598,
 lng:68.7870
 },
-
 rating:4.7,
 icon:"🏙️",
-cost:0
+cost:0,
+imageName:"dushanbe.jpg"
 },
 
 {
@@ -2283,18 +1858,16 @@ name:"Худжанд",
 region:"Согдийская область",
 country:"tj",
 category:"city",
-
 description:
 "Древнейший город Центральной Азии на берегу Сырдарьи.",
-
 coords:{
 lat:40.2833,
 lng:69.6333
 },
-
 rating:4.6,
 icon:"🏛️",
-cost:0
+cost:0,
+imageName:"khujand.jpg"
 },
 
 {
@@ -2304,18 +1877,16 @@ name:"Кӯлоб",
 region:"Хатлонская область",
 country:"tj",
 category:"city",
-
 description:
 "Один из старейших городов страны с богатой историей.",
-
 coords:{
 lat:37.9139,
 lng:69.7822
 },
-
 rating:4.4,
 icon:"🌾",
-cost:0
+cost:0,
+imageName:"kulob.jpg"
 },
 
 {
@@ -2325,18 +1896,16 @@ name:"Панҷакент",
 region:"Согдийская область",
 country:"tj",
 category:"city",
-
 description:
 "Ворота в Фанские горы и древняя цивилизация.",
-
 coords:{
 lat:39.4988,
 lng:67.6083
 },
-
 rating:4.7,
 icon:"⛰️",
-cost:0
+cost:0,
+imageName:"panjakent.jpg"
 },
 
 {
@@ -2346,18 +1915,16 @@ name:"Истаравшан",
 region:"Согдийская область",
 country:"tj",
 category:"city",
-
 description:
 "Город с более чем 2500-летней историей и ремеслами.",
-
 coords:{
 lat:39.9167,
 lng:69.0000
 },
-
 rating:4.6,
 icon:"🕌",
-cost:0
+cost:0,
+imageName:"istaravshan.jpg"
 },
 
 {
@@ -2367,18 +1934,35 @@ name:"Норак",
 region:"Хатлонская область",
 country:"tj",
 category:"city",
-
 description:
 "Город энергетиков у бирюзового водохранилища.",
-
 coords:{
 lat:38.3833,
 lng:69.3333
 },
-
 rating:4.5,
 icon:"💧",
-cost:0
+cost:0,
+imageName:"norak.jpg"
+},
+
+{
+id:"c7",
+type:"city",
+name:"Бохтар",
+region:"Хатлонская область",
+country:"tj",
+category:"city",
+description:
+"Один из главных городов юга Таджикистана.",
+coords:{
+lat:37.8364,
+lng:68.7803
+},
+rating:4.5,
+icon:"🏙️",
+cost:0,
+imageName:"bokhtar.jpg"
 }
 
 ];
@@ -2398,21 +1982,19 @@ city:"Ҳисор",
 region:"РРП",
 country:"tj",
 category:"history",
-
 description:
 "Историческая крепость с воротами и древним медресе.",
-
 coords:{
 lat:38.4850,
 lng:68.5350
 },
-
 rating:4.7,
 price:"20 сомони",
 numCost:20,
 hours:"09:00–18:00",
 phone:"+992 37 000 00 00",
-icon:"🏰"
+icon:"🏰",
+imageName:"hisor.jpg"
 },
 
 {
@@ -2423,21 +2005,19 @@ city:"Айни",
 region:"Согдийская область",
 country:"tj",
 category:"nature",
-
 description:
 "Живописное горное озеро в самом сердце Фанских гор.",
-
 coords:{
 lat:39.0731,
 lng:68.3664
 },
-
 rating:4.9,
 price:"Бесплатно",
 numCost:0,
 hours:"Круглосуточно",
 phone:"—",
-icon:"🏔️"
+icon:"🏔️",
+imageName:"iskanderkul.jpg"
 },
 
 {
@@ -2448,21 +2028,19 @@ city:"Панҷакент",
 region:"Согдийская область",
 country:"tj",
 category:"nature",
-
 description:
 "Каскад из семи разноцветных озёр в ущелье Шинг.",
-
 coords:{
 lat:39.3167,
 lng:67.7833
 },
-
 rating:4.9,
 price:"Бесплатно",
 numCost:0,
 hours:"Круглосуточно",
 phone:"—",
-icon:"💎"
+icon:"💎",
+imageName:"haftkul.jpg"
 },
 
 {
@@ -2473,21 +2051,19 @@ city:"Варзоб",
 region:"РРП",
 country:"tj",
 category:"nature",
-
 description:
 "Популярное ущелье реки Варзоб с зонами отдыха.",
-
 coords:{
 lat:38.7667,
 lng:68.7833
 },
-
 rating:4.6,
 price:"Бесплатно",
 numCost:0,
 hours:"Круглосуточно",
 phone:"—",
-icon:"🏞️"
+icon:"🏞️",
+imageName:"varzob.jpg"
 },
 
 {
@@ -2498,21 +2074,19 @@ city:"Душанбе",
 region:"г. Душанбе",
 country:"tj",
 category:"history",
-
 description:
 "Крупнейший музей с богатыми историческими экспозициями.",
-
 coords:{
 lat:38.5766,
 lng:68.7870
 },
-
 rating:4.6,
 price:"30 сомони",
 numCost:30,
 hours:"10:00–17:00",
 phone:"+992 37 227 00 00",
-icon:"🏛️"
+icon:"🏛️",
+imageName:"museum.jpg"
 },
 
 {
@@ -2523,21 +2097,19 @@ city:"Душанбе",
 region:"г. Душанбе",
 country:"tj",
 category:"food",
-
 description:
 "Традиционная таджикская кухня.",
-
 coords:{
 lat:38.5590,
 lng:68.7830
 },
-
 rating:4.5,
 price:"от 40 сомони",
 numCost:40,
 hours:"09:00–23:00",
 phone:"+992 37 111 22 33",
-icon:"🍽️"
+icon:"🍽️",
+imageName:"dastarkhon.jpg"
 }
 
 ];
@@ -2549,16 +2121,9 @@ FIREBASE ITEMS
 
 let FIREBASE_ITEMS=[];
 
-
-/* =====================================================
-ALL ITEMS
-===================================================== */
-
 let ALL_ITEMS=[
-
 ...CITIES,
 ...PLACES
-
 ];
 
 
@@ -2570,364 +2135,133 @@ const translations={
 
 ru:{
 
-homeTitle:
-"Путешествуй по Таджикистану 🇹🇯",
-
-searchPh:
-"Город, место, категория…",
-
-popularCities:
-"Популярные города",
-
-seeAll:
-"Все →",
-
-interestingPlaces:
-"Интересные места",
-
-searchTitle:
-"Поиск и категории",
-
-myTripTitle:
-"🧳 Моя поездка",
-
-guestName:
-"Гость",
-
-noRegister:
-"Без регистрации · офлайн-режим",
-
-favorites:
-"Избранное",
-
-myTrip:
-"Моя поездка",
-
-language:
-"Язык",
-
-aboutApp:
-"О приложении",
-
-favoritesTitle:
-"❤️ Избранное",
-
-navHome:
-"Главная",
-
-navSearch:
-"Поиск",
-
-navTrip:
-"Поездка",
-
-navProfile:
-"Профиль",
-
-addToTrip:
-"В поездку",
-
-inTrip:
-"В поездке",
-
-addFav:
-"Избранное",
-
-inFav:
-"В избранном",
-
-mapNote:
-"Координаты:",
-
-openMap:
-"Открыть карту ↗",
-
-emptyTrip:
-"Поездка пока пуста",
-
-emptyTripTxt:
-"Добавляйте города и места кнопкой «В поездку».",
-
-emptyFav:
-"Пока нет избранного",
-
-emptyFavTxt:
-"Нажмите на сердечко у объекта.",
-
-emptySearch:
-"Ничего не найдено",
-
-emptySearchTxt:
-"Попробуйте другой запрос.",
-
-clearTrip:
-"Очистить поездку",
-
-price:
-"Цена",
-
-hours:
-"Часы работы",
-
-phone:
-"Телефон",
-
-rating:
-"Рейтинг",
-
-totalBudget:
-"Примерный бюджет:",
-
-adLabel:
-"Реклама",
-
-firebaseOnline:
-"🟢 Firebase подключён",
-
-firebaseError:
-"🔴 Firebase недоступен"
+homeTitle:"Путешествуй по Таджикистану 🇹🇯",
+searchPh:"Город, место, категория…",
+popularCities:"Популярные города",
+seeAll:"Все →",
+interestingPlaces:"Интересные места",
+searchTitle:"Поиск и категории",
+myTripTitle:"🧳 Моя поездка",
+guestName:"Гость",
+noRegister:"Без регистрации · офлайн-режим",
+favorites:"Избранное",
+myTrip:"Моя поездка",
+language:"Язык",
+aboutApp:"О приложении",
+favoritesTitle:"❤️ Избранное",
+navHome:"Главная",
+navSearch:"Поиск",
+navTrip:"Поездка",
+navProfile:"Профиль",
+addToTrip:"В поездку",
+inTrip:"В поездке",
+addFav:"Избранное",
+inFav:"В избранном",
+mapNote:"Координаты:",
+openMap:"Открыть карту ↗",
+emptyTrip:"Поездка пока пуста",
+emptyTripTxt:"Добавляйте города и места кнопкой «В поездку».",
+emptyFav:"Пока нет избранного",
+emptyFavTxt:"Нажмите на сердечко у объекта.",
+emptySearch:"Ничего не найдено",
+emptySearchTxt:"Попробуйте другой запрос.",
+clearTrip:"Очистить поездку",
+price:"Цена",
+hours:"Часы работы",
+phone:"Телефон",
+rating:"Рейтинг",
+totalBudget:"Примерный бюджет:",
+adLabel:"Реклама",
+firebaseOnline:"🟢 Firebase подключён",
+firebaseError:"🔴 Firebase недоступен"
 
 },
 
 tj:{
 
-homeTitle:
-"Тоҷикистонро саёҳат кунед 🇹🇯",
-
-searchPh:
-"Шаҳр, ҷой, категория…",
-
-popularCities:
-"Шаҳрҳои маъмул",
-
-seeAll:
-"Ҳама →",
-
-interestingPlaces:
-"Ҷойҳои ҷолиб",
-
-searchTitle:
-"Ҷустуҷӯ ва категорияҳо",
-
-myTripTitle:
-"🧳 Сафари ман",
-
-guestName:
-"Меҳмон",
-
-noRegister:
-"Бе бақайдгирӣ · офлайн",
-
-favorites:
-"Дилхоҳ",
-
-myTrip:
-"Сафари ман",
-
-language:
-"Забон",
-
-aboutApp:
-"Дар бораи барнома",
-
-favoritesTitle:
-"❤️ Дилхоҳ",
-
-navHome:
-"Асосӣ",
-
-navSearch:
-"Ҷустуҷӯ",
-
-navTrip:
-"Сафар",
-
-navProfile:
-"Профил",
-
-addToTrip:
-"Ба сафар",
-
-inTrip:
-"Дар сафар",
-
-addFav:
-"Дилхоҳ",
-
-inFav:
-"Дар дилхоҳ",
-
-mapNote:
-"Координатаҳо:",
-
-openMap:
-"Кушодани харита ↗",
-
-emptyTrip:
-"Сафар холӣ аст",
-
-emptyTripTxt:
-"Ҷойҳоро бо тугмаи «Ба сафар» илова кунед.",
-
-emptyFav:
-"Ҳанӯз дилхоҳ нест",
-
-emptyFavTxt:
-"Барои нигоҳ доштан дилро пахш кунед.",
-
-emptySearch:
-"Чизе ёфт нашуд",
-
-emptySearchTxt:
-"Дархости дигарро кӯшиш кунед.",
-
-clearTrip:
-"Тоза кардани сафар",
-
-price:
-"Нарх",
-
-hours:
-"Соатҳои корӣ",
-
-phone:
-"Телефон",
-
-rating:
-"Рейтинг",
-
-totalBudget:
-"Буҷети тахминӣ:",
-
-adLabel:
-"Реклама",
-
-firebaseOnline:
-"🟢 Firebase пайваст аст",
-
-firebaseError:
-"🔴 Firebase дастрас нест"
+homeTitle:"Тоҷикистонро саёҳат кунед 🇹🇯",
+searchPh:"Шаҳр, ҷой, категория…",
+popularCities:"Шаҳрҳои маъмул",
+seeAll:"Ҳама →",
+interestingPlaces:"Ҷойҳои ҷолиб",
+searchTitle:"Ҷустуҷӯ ва категорияҳо",
+myTripTitle:"🧳 Сафари ман",
+guestName:"Меҳмон",
+noRegister:"Бе бақайдгирӣ · офлайн",
+favorites:"Дилхоҳ",
+myTrip:"Сафари ман",
+language:"Забон",
+aboutApp:"Дар бораи барнома",
+favoritesTitle:"❤️ Дилхоҳ",
+navHome:"Асосӣ",
+navSearch:"Ҷустуҷӯ",
+navTrip:"Сафар",
+navProfile:"Профил",
+addToTrip:"Ба сафар",
+inTrip:"Дар сафар",
+addFav:"Дилхоҳ",
+inFav:"Дар дилхоҳ",
+mapNote:"Координатаҳо:",
+openMap:"Кушодани харита ↗",
+emptyTrip:"Сафар холӣ аст",
+emptyTripTxt:"Ҷойҳоро бо тугмаи «Ба сафар» илова кунед.",
+emptyFav:"Ҳанӯз дилхоҳ нест",
+emptyFavTxt:"Барои нигоҳ доштан дилро пахш кунед.",
+emptySearch:"Чизе ёфт нашуд",
+emptySearchTxt:"Дархости дигарро кӯшиш кунед.",
+clearTrip:"Тоза кардани сафар",
+price:"Нарх",
+hours:"Соатҳои корӣ",
+phone:"Телефон",
+rating:"Рейтинг",
+totalBudget:"Буҷети тахминӣ:",
+adLabel:"Реклама",
+firebaseOnline:"🟢 Firebase пайваст аст",
+firebaseError:"🔴 Firebase дастрас нест"
 
 },
 
 en:{
 
-homeTitle:
-"Explore Tajikistan 🇹🇯",
-
-searchPh:
-"City, place, category…",
-
-popularCities:
-"Popular cities",
-
-seeAll:
-"All →",
-
-interestingPlaces:
-"Places to see",
-
-searchTitle:
-"Search & categories",
-
-myTripTitle:
-"🧳 My trip",
-
-guestName:
-"Guest",
-
-noRegister:
-"No account · offline mode",
-
-favorites:
-"Favorites",
-
-myTrip:
-"My trip",
-
-language:
-"Language",
-
-aboutApp:
-"About app",
-
-favoritesTitle:
-"❤️ Favorites",
-
-navHome:
-"Home",
-
-navSearch:
-"Search",
-
-navTrip:
-"Trip",
-
-navProfile:
-"Profile",
-
-addToTrip:
-"Add to trip",
-
-inTrip:
-"In trip",
-
-addFav:
-"Favorite",
-
-inFav:
-"Favorited",
-
-mapNote:
-"Coordinates:",
-
-openMap:
-"Open Map ↗",
-
-emptyTrip:
-"Your trip is empty",
-
-emptyTripTxt:
-"Add places using Add to trip.",
-
-emptyFav:
-"No favorites yet",
-
-emptyFavTxt:
-"Tap the heart on any place.",
-
-emptySearch:
-"Nothing found",
-
-emptySearchTxt:
-"Try another search.",
-
-clearTrip:
-"Clear trip",
-
-price:
-"Price",
-
-hours:
-"Hours",
-
-phone:
-"Phone",
-
-rating:
-"Rating",
-
-totalBudget:
-"Estimated budget:",
-
-adLabel:
-"Ad",
-
-firebaseOnline:
-"🟢 Firebase connected",
-
-firebaseError:
-"🔴 Firebase unavailable"
+homeTitle:"Explore Tajikistan 🇹🇯",
+searchPh:"City, place, category…",
+popularCities:"Popular cities",
+seeAll:"All →",
+interestingPlaces:"Places to see",
+searchTitle:"Search & categories",
+myTripTitle:"🧳 My trip",
+guestName:"Guest",
+noRegister:"No account · offline mode",
+favorites:"Favorites",
+myTrip:"My trip",
+language:"Language",
+aboutApp:"About app",
+favoritesTitle:"❤️ Favorites",
+navHome:"Home",
+navSearch:"Search",
+navTrip:"Trip",
+navProfile:"Profile",
+addToTrip:"Add to trip",
+inTrip:"In trip",
+addFav:"Favorite",
+inFav:"Favorited",
+mapNote:"Coordinates:",
+openMap:"Open Map ↗",
+emptyTrip:"Your trip is empty",
+emptyTripTxt:"Add places using Add to trip.",
+emptyFav:"No favorites yet",
+emptyFavTxt:"Tap the heart on any place.",
+emptySearch:"Nothing found",
+emptySearchTxt:"Try another search.",
+clearTrip:"Clear trip",
+price:"Price",
+hours:"Hours",
+phone:"Phone",
+rating:"Rating",
+totalBudget:"Estimated budget:",
+adLabel:"Ad",
+firebaseOnline:"🟢 Firebase connected",
+firebaseError:"🔴 Firebase unavailable"
 
 }
 
@@ -2941,25 +2275,22 @@ STATE
 const state={
 
 lang:
-localStorage.getItem("shtjk_lang_v3")||"ru",
+localStorage.getItem("shtjk_lang_v4")||"ru",
 
-tab:
-"home",
+tab:"home",
 
-category:
-"all",
+category:"all",
 
-query:
-"",
+query:"",
 
 favorites:
 JSON.parse(
-localStorage.getItem("shtjk_favorites_v3")||"[]"
+localStorage.getItem("shtjk_favorites_v4")||"[]"
 ),
 
 trip:
 JSON.parse(
-localStorage.getItem("shtjk_trip_v3")||"[]"
+localStorage.getItem("shtjk_trip_v4")||"[]"
 )
 
 };
@@ -2981,146 +2312,154 @@ key
 
 
 /* =====================================================
-FIREBASE LOAD
+NORMALIZE FIREBASE ITEM
+===================================================== */
+
+function normalizeFirebaseItem(firebaseDoc){
+
+const data=firebaseDoc.data();
+
+const coords=data.coords||{};
+
+const type=
+data.type||"place";
+
+let category=
+data.category||"nature";
+
+if(
+type==="city"
+){
+category="city";
+}
+
+if(
+type==="hotel"
+){
+category="hotel";
+}
+
+if(
+type==="restaurant"
+){
+category="food";
+}
+
+return{
+
+id:"fb_"+firebaseDoc.id,
+
+firebaseId:firebaseDoc.id,
+
+source:"firebase",
+
+type:type,
+
+name:data.name||"Без названия",
+
+city:data.city||"",
+
+region:data.region||"Таджикистан",
+
+country:"tj",
+
+category:category,
+
+description:data.description||"",
+
+coords:{
+lat:Number(coords.lat)||0,
+lng:Number(coords.lng)||0
+},
+
+rating:Number(data.rating)||0,
+
+price:data.price||"",
+
+numCost:Number(data.numCost)||0,
+
+hours:data.hours||"",
+
+phone:data.phone||"",
+
+icon:data.icon||
+(
+type==="hotel"
+?"🏨":
+type==="restaurant"
+?"🍽️":
+type==="city"
+?"🏙️":
+"🏔️"
+),
+
+/*
+   ВАЖНО:
+   imageName берём из Firestore.
+*/
+
+imageName:
+data.imageName||
+"",
+
+/*
+   Ссылка строится автоматически.
+*/
+
+imageUrl:
+getImageUrl(data)
+
+};
+
+}
+
+
+/* =====================================================
+LOAD FIREBASE
 ===================================================== */
 
 async function loadFirebasePlaces(){
 
 const status=
-document.getElementById("firebaseStatus");
+document.getElementById(
+"firebaseStatus"
+);
 
 try{
 
 status.textContent=
 "🔄 Загружаем объекты из Firebase...";
 
-
 const snapshot=
 await getDocs(
 collection(db,"places")
 );
 
-
 FIREBASE_ITEMS=[];
-
 
 snapshot.forEach(firebaseDoc=>{
 
-const data=
-firebaseDoc.data();
-
-
-const coords=
-data.coords||{};
-
-
-const item={
-
-id:
-"fb_"+firebaseDoc.id,
-
-firebaseId:
-firebaseDoc.id,
-
-source:
-"firebase",
-
-type:
-data.type||"place",
-
-name:
-data.name||"Без названия",
-
-city:
-data.city||"",
-
-region:
-data.region||"Таджикистан",
-
-country:
-"tj",
-
-category:
-data.category||(
-data.type==="hotel"
-?"hotel":
-data.type==="restaurant"
-?"food":
-data.type==="city"
-?"city":
-"nature"
-),
-
-description:
-data.description||"",
-
-coords:{
-lat:
-Number(coords.lat)||0,
-
-lng:
-Number(coords.lng)||0
-},
-
-rating:
-Number(data.rating)||0,
-
-price:
-data.price||"",
-
-numCost:
-Number(data.numCost)||0,
-
-hours:
-data.hours||"",
-
-phone:
-data.phone||"",
-
-icon:
-data.icon||
-(
-data.type==="hotel"
-?"🏨":
-data.type==="restaurant"
-?"🍽️":
-data.type==="city"
-?"🏙️":
-"🏔️"
-),
-
-imageUrl:
-data.imageUrl||
-data.image||
-""
-
-};
-
+const item=
+normalizeFirebaseItem(
+firebaseDoc
+);
 
 FIREBASE_ITEMS.push(item);
 
 });
 
-
 ALL_ITEMS=[
-
 ...CITIES,
-
 ...PLACES,
-
 ...FIREBASE_ITEMS
-
 ];
-
 
 status.textContent=
 "🟢 Firebase: "+
 FIREBASE_ITEMS.length+
-" объектов загружено";
-
+" объектов";
 
 refreshAllViews();
-
 
 }catch(error){
 
@@ -3130,7 +2469,7 @@ error
 );
 
 status.textContent=
-t("firebaseError");
+"🔴 Firebase: ошибка доступа";
 
 }
 
@@ -3149,20 +2488,17 @@ item=>item.id===id
 
 }
 
-
 function isFav(id){
 
 return state.favorites.includes(id);
 
 }
 
-
 function isInTrip(id){
 
 return state.trip.includes(id);
 
 }
-
 
 function catMeta(id){
 
@@ -3174,7 +2510,6 @@ CATEGORIES[0]
 );
 
 }
-
 
 function itemLocLabel(item){
 
@@ -3193,23 +2528,19 @@ item.region
 
 }
 
-
 function thumbBg(item,index){
 
 const colors=[
-
 "#E4F1EA",
 "#F3D08D",
 "#DDEDE3",
 "#F0E2C0",
 "#E9F3EC"
-
 ];
 
 return colors[index%colors.length];
 
 }
-
 
 function escapeHtml(value){
 
@@ -3224,20 +2555,36 @@ return String(value??"")
 
 
 /* =====================================================
-IMAGE
+IMAGE CONTENT
 ===================================================== */
 
 function thumbContent(item){
 
-if(item.imageUrl){
+const image=
+item.imageUrl||
+(
+item.imageName
+?
+GITHUB_IMAGE_BASE+
+encodeURIComponent(
+item.imageName.trim()
+)
+:
+""
+);
+
+if(image){
 
 return`
 
 <img
-src="${escapeHtml(item.imageUrl)}"
-alt=""
+src="${escapeHtml(image)}"
+alt="${escapeHtml(item.name)}"
 loading="lazy"
-onerror="this.style.display='none'"
+onerror="
+this.style.display='none';
+this.parentElement.classList.add('image-error');
+"
 >
 
 `;
@@ -3258,14 +2605,11 @@ function showToast(message){
 const el=
 document.getElementById("toast");
 
-el.textContent=
-message;
+el.textContent=message;
 
 el.classList.add("show");
 
-clearTimeout(
-showToast.timer
-);
+clearTimeout(showToast.timer);
 
 showToast.timer=
 setTimeout(
@@ -3287,25 +2631,21 @@ function matchesQuery(item,q){
 if(!q)
 return true;
 
-q=
-q.toLowerCase();
+q=q.toLowerCase();
 
 return[
-
 item.name||"",
 item.region||"",
 item.city||"",
 item.description||"",
 item.category||"",
 item.type||""
-
 ]
 .join(" ")
 .toLowerCase()
 .includes(q);
 
 }
-
 
 function filterItems(){
 
@@ -3315,13 +2655,11 @@ const categoryOK=
 state.category==="all"||
 item.category===state.category;
 
-
 const queryOK=
 matchesQuery(
 item,
 state.query.trim()
 );
-
 
 return categoryOK&&queryOK;
 
@@ -3339,13 +2677,10 @@ function renderChips(){
 [
 document.getElementById("catChips"),
 document.getElementById("catChips2")
-
 ]
 .forEach(row=>{
 
-if(!row)
-return;
-
+if(!row)return;
 
 row.innerHTML=
 CATEGORIES.map(c=>`
@@ -3356,24 +2691,17 @@ c.id===state.category
 ?"active"
 :""
 }"
-data-cat="${c.id}"
->
+data-cat="${c.id}">
 
-<span>
-${c.icon}
-</span>
+<span>${c.icon}</span>
 
-<span>
-${c.label}
-</span>
+<span>${c.label}</span>
 
 </button>
 
 `).join("");
 
-
 });
-
 
 document
 .querySelectorAll(".chip")
@@ -3404,7 +2732,7 @@ renderSearchResults();
 
 
 /* =====================================================
-CITY RAIL
+CITIES
 ===================================================== */
 
 function renderCitiesRail(){
@@ -3414,21 +2742,15 @@ document.getElementById(
 "citiesRail"
 );
 
-
 const firebaseCities=
 FIREBASE_ITEMS.filter(
 item=>item.type==="city"
 );
 
-
 const cities=[
-
 ...CITIES,
-
 ...firebaseCities
-
 ];
-
 
 if(!cities.length){
 
@@ -3439,26 +2761,22 @@ return;
 
 }
 
-
 rail.innerHTML=
 cities.map((c,i)=>`
 
 <div
 class="city-card"
-data-id="${escapeHtml(c.id)}"
->
+data-id="${escapeHtml(c.id)}">
 
 <div
 class="thumb"
-style="background:${thumbBg(c,i)}"
->
+style="background:${thumbBg(c,i)}">
 
 ${thumbContent(c)}
 
 <div
 class="fav-dot"
-data-fav="${escapeHtml(c.id)}"
->
+data-fav="${escapeHtml(c.id)}">
 
 ${isFav(c.id)?"❤️":"🤍"}
 
@@ -3466,19 +2784,14 @@ ${isFav(c.id)?"❤️":"🤍"}
 
 </div>
 
-
 <div class="body">
 
 <div class="name">
-
 ${escapeHtml(c.name)}
-
 </div>
 
 <div class="region">
-
 ${escapeHtml(c.region||"Таджикистан")}
-
 </div>
 
 </div>
@@ -3487,14 +2800,13 @@ ${escapeHtml(c.region||"Таджикистан")}
 
 `).join("");
 
-
 bindCardEvents(rail);
 
 }
 
 
 /* =====================================================
-PLACES GRID
+PLACES
 ===================================================== */
 
 function renderPlacesGrid(){
@@ -3504,17 +2816,12 @@ document.getElementById(
 "placesGrid"
 );
 
-
 const places=[
-
 ...PLACES,
-
 ...FIREBASE_ITEMS.filter(
 item=>item.type!=="city"
 )
-
 ];
-
 
 if(!places.length){
 
@@ -3525,22 +2832,18 @@ return;
 
 }
 
-
 grid.innerHTML=
 places.map((p,i)=>`
 
 <div
 class="place-card"
-data-id="${escapeHtml(p.id)}"
->
+data-id="${escapeHtml(p.id)}">
 
 <div
 class="thumb"
-style="background:${thumbBg(p,i)}"
->
+style="background:${thumbBg(p,i)}">
 
 ${thumbContent(p)}
-
 
 <div class="cat-tag">
 
@@ -3554,35 +2857,26 @@ catMeta(p.category).label
 
 </div>
 
-
 <div class="body">
 
 <div class="name">
-
 ${escapeHtml(p.name)}
-
 </div>
 
 <div class="loc">
-
-${escapeHtml(p.city||p.region||"Таджикистан")}
-
+${escapeHtml(
+p.city||p.region||"Таджикистан"
+)}
 </div>
-
 
 <div class="meta">
 
 <div class="rating">
-
 ⭐ ${Number(p.rating||0).toFixed(1)}
-
 </div>
 
-
 <div class="price-tag">
-
 ${escapeHtml(p.price||"")}
-
 </div>
 
 </div>
@@ -3592,7 +2886,6 @@ ${escapeHtml(p.price||"")}
 </div>
 
 `).join("");
-
 
 bindCardEvents(grid);
 
@@ -3609,15 +2902,13 @@ function renderAds(){
 "adSlot1",
 "adSlot2",
 "adSlot3"
-
-].forEach(id=>{
+]
+.forEach(id=>{
 
 const el=
 document.getElementById(id);
 
-if(!el)
-return;
-
+if(!el)return;
 
 el.innerHTML=`
 
@@ -3649,7 +2940,7 @@ SHOHIN TRAVEL SHTJK
 
 
 /* =====================================================
-RESULTS
+RESULT LIST
 ===================================================== */
 
 function renderResultsList(results){
@@ -3666,9 +2957,7 @@ return`
 
 <div class="txt">
 
-<b>
-${t("emptySearch")}
-</b>
+<b>${t("emptySearch")}</b>
 
 <br>
 
@@ -3682,7 +2971,6 @@ ${t("emptySearchTxt")}
 
 }
 
-
 return`
 
 <div style="padding-top:10px">
@@ -3691,27 +2979,21 @@ ${results.map((item,i)=>`
 
 <div
 class="list-row"
-data-id="${escapeHtml(item.id)}"
->
+data-id="${escapeHtml(item.id)}">
 
 <div
 class="thumb"
-style="background:${thumbBg(item,i)}"
->
+style="background:${thumbBg(item,i)}">
 
 ${thumbContent(item)}
 
 </div>
 
-
 <div class="info">
 
 <div class="name">
-
 ${escapeHtml(item.name)}
-
 </div>
-
 
 <div class="loc">
 
@@ -3729,11 +3011,8 @@ itemLocLabel(item)
 
 </div>
 
-
 <div class="rating">
-
 ⭐ ${Number(item.rating||0).toFixed(1)}
-
 </div>
 
 </div>
@@ -3762,7 +3041,6 @@ const filtering=
 q.length>0||
 state.category!=="all";
 
-
 document
 .getElementById(
 "homeDefaultSections"
@@ -3772,18 +3050,15 @@ filtering
 ?"none"
 :"block";
 
-
 const filtered=
 document.getElementById(
 "homeFilteredSections"
 );
 
-
 filtered.style.display=
 filtering
 ?"block"
 :"none";
-
 
 document
 .getElementById(
@@ -3794,14 +3069,12 @@ q
 ?"block"
 :"none";
 
-
 if(filtering){
 
 filtered.innerHTML=
 renderResultsList(
 filterItems()
 );
-
 
 bindListRowEvents(
 filtered
@@ -3823,12 +3096,10 @@ document.getElementById(
 "searchResults"
 );
 
-
 box.innerHTML=
 renderResultsList(
 filterItems()
 );
-
 
 bindListRowEvents(box);
 
@@ -3856,24 +3127,20 @@ document.getElementById(
 "budgetBox"
 );
 
-
 const items=
 state.trip
 .map(findItem)
 .filter(Boolean);
-
 
 document
 .getElementById("tripCount")
 .textContent=
 state.trip.length;
 
-
 const badge=
 document.getElementById(
 "navTripBadge"
 );
-
 
 if(state.trip.length){
 
@@ -3888,25 +3155,19 @@ badge.style.display="none";
 
 }
 
-
 if(!items.length){
 
 budget.innerHTML="";
-
 
 list.innerHTML=`
 
 <div class="empty-state">
 
-<div class="glyph">
-🧳
-</div>
+<div class="glyph">🧳</div>
 
 <div class="txt">
 
-<b>
-${t("emptyTrip")}
-</b>
+<b>${t("emptyTrip")}</b>
 
 <br>
 
@@ -3918,24 +3179,18 @@ ${t("emptyTripTxt")}
 
 `;
 
-
 actions.innerHTML="";
 
 return;
 
 }
 
-
 const total=
 items.reduce(
 (sum,item)=>
-sum+
-(
-Number(item.numCost)||0
-),
+sum+(Number(item.numCost)||0),
 0
 );
-
 
 budget.innerHTML=`
 
@@ -3957,14 +3212,12 @@ ${total} сомони
 
 `;
 
-
 list.innerHTML=
 items.map((item,i)=>`
 
 <div
 class="trip-item"
-data-id="${escapeHtml(item.id)}"
->
+data-id="${escapeHtml(item.id)}">
 
 <div class="idx">
 ${i+1}
@@ -3972,13 +3225,11 @@ ${i+1}
 
 <div
 class="thumb"
-style="background:${thumbBg(item,i)}"
->
+style="background:${thumbBg(item,i)}">
 
 ${thumbContent(item)}
 
 </div>
-
 
 <div class="info">
 
@@ -3992,11 +3243,9 @@ ${escapeHtml(itemLocLabel(item))}
 
 </div>
 
-
 <button
 class="rm"
-data-rm-trip="${escapeHtml(item.id)}"
->
+data-rm-trip="${escapeHtml(item.id)}">
 ✕
 </button>
 
@@ -4004,18 +3253,15 @@ data-rm-trip="${escapeHtml(item.id)}"
 
 `).join("");
 
-
 actions.innerHTML=`
 
 <button
 class="btn btn-danger-ghost btn-block"
-id="clearTripBtn"
->
+id="clearTripBtn">
 ${t("clearTrip")}
 </button>
 
 `;
-
 
 list
 .querySelectorAll("[data-rm-trip]")
@@ -4033,7 +3279,6 @@ btn.dataset.rmTrip
 
 });
 
-
 list
 .querySelectorAll(".trip-item")
 .forEach(row=>{
@@ -4044,7 +3289,6 @@ row.dataset.id
 );
 
 });
-
 
 document
 .getElementById(
@@ -4080,18 +3324,15 @@ document.getElementById(
 "favList"
 );
 
-
 const items=
 state.favorites
 .map(findItem)
 .filter(Boolean);
 
-
 document
 .getElementById("favCount")
 .textContent=
 state.favorites.length;
-
 
 if(!items.length){
 
@@ -4099,15 +3340,11 @@ list.innerHTML=`
 
 <div class="empty-state">
 
-<div class="glyph">
-❤️
-</div>
+<div class="glyph">❤️</div>
 
 <div class="txt">
 
-<b>
-${t("emptyFav")}
-</b>
+<b>${t("emptyFav")}</b>
 
 <br>
 
@@ -4122,7 +3359,6 @@ ${t("emptyFavTxt")}
 return;
 
 }
-
 
 list.innerHTML=
 renderResultsList(items);
@@ -4159,7 +3395,6 @@ card.dataset.id
 
 });
 
-
 container
 .querySelectorAll("[data-fav]")
 .forEach(dot=>{
@@ -4177,7 +3412,6 @@ dot.dataset.fav
 });
 
 }
-
 
 function bindListRowEvents(container){
 
@@ -4230,7 +3464,6 @@ state.lang==="tj"
 
 }
 
-
 saveFavorites();
 
 refreshAllViews();
@@ -4273,7 +3506,6 @@ state.lang==="tj"
 
 }
 
-
 saveTrip();
 
 refreshAllViews();
@@ -4282,7 +3514,7 @@ refreshAllViews();
 
 
 /* =====================================================
-DETAIL SHEET
+DETAIL
 ===================================================== */
 
 function openSheet(id){
@@ -4290,17 +3522,26 @@ function openSheet(id){
 const item=
 findItem(id);
 
-if(!item)
-return;
-
+if(!item)return;
 
 const cat=
 catMeta(item.category);
 
-
 const city=
 item.type==="city";
 
+const image=
+item.imageUrl||
+(
+item.imageName
+?
+GITHUB_IMAGE_BASE+
+encodeURIComponent(
+item.imageName.trim()
+)
+:
+""
+);
 
 const mapUrl=
 "https://maps.google.com/?q="+
@@ -4308,35 +3549,34 @@ item.coords.lat+
 ","+
 item.coords.lng;
 
-
 const sheet=
 document.getElementById(
 "sheet"
 );
 
-
 sheet.innerHTML=`
 
-<div class="sheet-grabber">
-</div>
-
+<div class="sheet-grabber"></div>
 
 <div
 class="sheet-hero"
-style="background:${thumbBg(item,1)}"
->
+style="background:${thumbBg(item,1)}">
 
-${item.imageUrl
+${
+image
 ?
-`<img
-src="${escapeHtml(item.imageUrl)}"
-alt=""
-onerror="this.style.display='none'"
->`
+`
+<img
+src="${escapeHtml(image)}"
+alt="${escapeHtml(item.name)}"
+onerror="
+this.style.display='none';
+this.parentElement.innerHTML += '<div style=&quot;font-size:64px&quot;>${escapeHtml(item.icon||"📍")}</div>';
+">
+`
 :
 item.icon||"📍"
 }
-
 
 <div class="sheet-cat">
 
@@ -4346,96 +3586,77 @@ ${escapeHtml(cat.label)}
 
 </div>
 
-
 <button
 class="sheet-close"
-id="sheetClose"
->
+id="sheetClose">
 ✕
 </button>
 
 </div>
 
-
 <div class="sheet-body">
 
 <div class="sheet-title">
-
 ${escapeHtml(item.name)}
-
 </div>
-
 
 <div class="sheet-loc">
-
-📍
-${escapeHtml(itemLocLabel(item))}
-
+📍 ${escapeHtml(itemLocLabel(item))}
 </div>
-
 
 <div class="sheet-stats">
 
 <div class="stat-pill">
 
 <div class="v">
-
-⭐
-${Number(item.rating||0).toFixed(1)}
-
+⭐ ${Number(item.rating||0).toFixed(1)}
 </div>
 
 <div class="l">
-
 ${t("rating")}
-
 </div>
 
 </div>
 
-
-${!city?`
+${
+!city
+?
+`
 
 <div class="stat-pill">
 
 <div class="v">
-
 ${escapeHtml(item.price||"—")}
-
 </div>
 
 <div class="l">
-
 ${t("price")}
-
 </div>
 
 </div>
-
 
 <div class="stat-pill">
 
 <div
 class="v"
-style="font-size:11.5px"
->
+style="font-size:11.5px">
 
 ${escapeHtml(item.hours||"—")}
 
 </div>
 
 <div class="l">
-
 ${t("hours")}
-
 </div>
 
 </div>
 
-`:""}
+`
+:
+""
+}
 
 </div>
-
 
 <div class="sheet-desc">
 
@@ -4446,14 +3667,14 @@ item.description||
 
 </div>
 
-
-${!city?`
+${
+!city
+?
+`
 
 <div class="sheet-detail-row">
 
-<div class="ic">
-📞
-</div>
+<div class="ic">📞</div>
 
 <div class="k">
 ${t("phone")}
@@ -4465,15 +3686,16 @@ ${escapeHtml(item.phone||"—")}
 
 </div>
 
-`:""}
-
+`
+:
+""
+}
 
 <div class="sheet-map-box">
 
 <div>
 
-🗺️
-${t("mapNote")}
+🗺️ ${t("mapNote")}
 
 <br>
 
@@ -4486,13 +3708,11 @@ ${Number(item.coords.lng||0).toFixed(4)}
 
 </div>
 
-
 <a
 class="map-link"
 href="${mapUrl}"
 target="_blank"
-rel="noopener"
->
+rel="noopener">
 
 ${t("openMap")}
 
@@ -4502,53 +3722,53 @@ ${t("openMap")}
 
 </div>
 
-
 <div class="sheet-actions">
 
 <button
 class="act-btn ${isInTrip(item.id)?"on":""}"
-id="sheetTripBtn"
->
+id="sheetTripBtn">
 
-<div class="ic">
-🧳
-</div>
+<div class="ic">🧳</div>
 
 <div>
 
-${isInTrip(item.id)
+${
+isInTrip(item.id)
 ?
 t("inTrip")
 :
-t("addToTrip")}
+t("addToTrip")
+}
 
 </div>
 
 </button>
 
-
 <button
 class="act-btn ${isFav(item.id)?"on":""}"
-id="sheetFavBtn"
->
+id="sheetFavBtn">
 
 <div class="ic">
 
-${isFav(item.id)
+${
+isFav(item.id)
 ?
 "❤️"
 :
-"🤍"}
+"🤍"
+}
 
 </div>
 
 <div>
 
-${isFav(item.id)
+${
+isFav(item.id)
 ?
 t("inFav")
 :
-t("addFav")}
+t("addFav")
+}
 
 </div>
 
@@ -4557,7 +3777,6 @@ t("addFav")}
 </div>
 
 `;
-
 
 document
 .getElementById("sheetClose")
@@ -4570,7 +3789,6 @@ document
 
 };
 
-
 document
 .getElementById("sheetTripBtn")
 .onclick=()=>{
@@ -4581,7 +3799,6 @@ openSheet(item.id);
 
 };
 
-
 document
 .getElementById("sheetFavBtn")
 .onclick=()=>{
@@ -4591,7 +3808,6 @@ toggleFav(item.id);
 openSheet(item.id);
 
 };
-
 
 document
 .getElementById("overlay")
@@ -4607,9 +3823,7 @@ TABS
 
 function setTab(tab){
 
-state.tab=
-tab;
-
+state.tab=tab;
 
 document
 .querySelectorAll(".view")
@@ -4617,19 +3831,16 @@ document
 v.classList.remove("active")
 );
 
-
 const target=
 document.getElementById(
 "view-"+tab
 );
-
 
 if(target){
 
 target.classList.add("active");
 
 }
-
 
 document
 .querySelectorAll(".nav-btn")
@@ -4642,18 +3853,14 @@ btn.dataset.tab===tab
 
 );
 
-
 if(tab==="search")
 renderSearchResults();
-
 
 if(tab==="trip")
 renderTrip();
 
-
 if(tab==="favorites")
 renderFavorites();
-
 
 window.scrollTo(0,0);
 
@@ -4669,7 +3876,6 @@ function applyLanguage(){
 document.documentElement.lang=
 state.lang;
 
-
 document
 .querySelectorAll("[data-i18n]")
 .forEach(el=>{
@@ -4679,7 +3885,6 @@ t(el.dataset.i18n);
 
 });
 
-
 document
 .querySelectorAll("[data-i18n-ph]")
 .forEach(el=>{
@@ -4688,7 +3893,6 @@ el.placeholder=
 t(el.dataset.i18nPh);
 
 });
-
 
 document
 .querySelectorAll(".lang-btn")
@@ -4701,33 +3905,17 @@ btn.dataset.lang===state.lang
 
 });
 
-
-const status=
-document.getElementById(
-"firebaseStatus"
-);
-
-
-if(FIREBASE_ITEMS.length){
-
-status.textContent=
-t("firebaseOnline")+
-" · "+
-FIREBASE_ITEMS.length;
-
-}
-
 }
 
 
 /* =====================================================
-STORAGE
+STORAGE LOCAL
 ===================================================== */
 
 function saveFavorites(){
 
 localStorage.setItem(
-"shtjk_favorites_v3",
+"shtjk_favorites_v4",
 JSON.stringify(
 state.favorites
 )
@@ -4735,11 +3923,10 @@ state.favorites
 
 }
 
-
 function saveTrip(){
 
 localStorage.setItem(
-"shtjk_trip_v3",
+"shtjk_trip_v4",
 JSON.stringify(
 state.trip
 )
@@ -4762,6 +3949,7 @@ renderAds();
 
 renderChips();
 
+applyLanguage();
 
 if(state.tab==="home"){
 
@@ -4769,13 +3957,11 @@ applyHomeFilterView();
 
 }
 
-
 if(state.tab==="search"){
 
 renderSearchResults();
 
 }
-
 
 if(state.tab==="trip"){
 
@@ -4783,19 +3969,16 @@ renderTrip();
 
 }
 
-
 if(state.tab==="favorites"){
 
 renderFavorites();
 
 }
 
-
 document
 .getElementById("favCount")
 .textContent=
 state.favorites.length;
-
 
 document
 .getElementById("tripCount")
@@ -4810,7 +3993,6 @@ GLOBAL EVENTS
 ===================================================== */
 
 function bindGlobalEvents(){
-
 
 document
 .querySelectorAll("[data-nav]")
@@ -4827,7 +4009,6 @@ renderChips();
 
 }
 
-
 setTab(
 el.dataset.nav
 );
@@ -4835,7 +4016,6 @@ el.dataset.nav
 };
 
 });
-
 
 document
 .querySelectorAll(".nav-btn")
@@ -4848,12 +4028,10 @@ btn.dataset.tab
 
 });
 
-
 const homeSearch=
 document.getElementById(
 "homeSearch"
 );
-
 
 homeSearch.oninput=e=>{
 
@@ -4863,7 +4041,6 @@ e.target.value;
 applyHomeFilterView();
 
 };
-
 
 document
 .getElementById(
@@ -4879,18 +4056,15 @@ applyHomeFilterView();
 
 };
 
-
 const fullSearch=
 document.getElementById(
 "fullSearch"
 );
 
-
 fullSearch.oninput=e=>{
 
 state.query=
 e.target.value;
-
 
 document
 .getElementById(
@@ -4903,11 +4077,9 @@ e.target.value
 :
 "none";
 
-
 renderSearchResults();
 
 };
-
 
 document
 .getElementById(
@@ -4921,7 +4093,6 @@ state.query="";
 
 renderSearchResults();
 
-
 document
 .getElementById(
 "fullSearchClear"
@@ -4929,7 +4100,6 @@ document
 .style.display="none";
 
 };
-
 
 document
 .getElementById(
@@ -4950,7 +4120,6 @@ document
 
 };
 
-
 document
 .querySelectorAll(".lang-btn")
 .forEach(btn=>{
@@ -4960,12 +4129,10 @@ btn.onclick=()=>{
 state.lang=
 btn.dataset.lang;
 
-
 localStorage.setItem(
-"shtjk_lang_v3",
+"shtjk_lang_v4",
 state.lang
 );
-
 
 applyLanguage();
 
@@ -5012,9 +4179,6 @@ error
 }
 
 }
-
-
-/* START */
 
 init();
 
